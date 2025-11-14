@@ -1,0 +1,274 @@
+/* NAVBAR WRAPPER */
+.navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #000000, #2d004d, #6a0dad);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* INNER FLEX CONTAINER */
+.navbar-container {
+  max-width: 1200px;
+  margin-right: 5%;
+  padding: 12px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO (Left-most) */
+.navbar-logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: snow;
+  text-decoration: none;
+  margin-left:3%;
+}
+
+/* RIGHT SECTION: username + logout */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* spacing between username and logout button */
+  margin-left: 0;
+}
+
+/* Username */
+.navbar-username {
+  font-size: 20px;
+  color: snow;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+
+}
+
+.navbar-username:hover {
+  text-decoration: underline;
+  transform: scale(1.03);  
+}
+/* navbar home button */
+
+.navbar-home-btn
+{
+  font-size: 20px;
+  color: snow;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar-home-btn:hover{
+   text-decoration: underline;
+   transform: scale(1.03);  
+}
+
+/* Logout Button (Right-most) */
+.logout-button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  background: snow;
+  color: #2d004d;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-button:hover {
+  background: #7a7474;
+  transform: scale(1.03);  
+}
+
+
+/* MAIN CARD */
+.category-card {
+  display: block;
+  height: 250px; 
+  width: 350px;         /* Increased height */
+  border-radius: 12px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  opacity: 100;
+}
+
+.category-card:hover {
+  transform: scale(1.05);    /* subtle zoom */
+}
+
+/* DARKEN OVERLAY FOR READABILITY */
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);  /* slight dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* TEXT STYLES */
+.category-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.category-subtext {
+  font-size: 14px;
+  color: #e5e5e5;
+  margin-top: 4px;
+}
+
+/* POP */
+.category-pop {
+  background-image: url('/pop3.png');
+}
+
+/* ROCK */
+.category-rock {
+  background-image: url('/rock3.png');
+}
+
+/* JAZZ */
+.category-jazz {
+  background-image: url('/jazz.png');
+}
+
+/* HIPHOP */
+.category-hiphop {
+  background-image: url('/hiphop.png');
+}
+
+/* CLASSICAL */
+.category-classical {
+  background-image: url('/classical.png');
+}
+
+/* LIKED SONGS CARD */
+.category-liked {
+  background-image: url('/liked2.png');
+}
+
+
+
+
+/* categorypage styles start from here */
+
+
+/* MAIN WRAPPER */
+.category-page {
+  max-width: 900px;        /* same as max-w-4xl */
+  margin: 0 auto;
+  padding: 24px 16px;      /* py-6 px-4 */
+  
+}
+
+/* HEADER */
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;     /* mb-4 */
+}
+
+/* PAGE TITLE */
+.category-title {
+  font-size: 28px;         /* text-2xl */
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* BUTTONS WRAPPER */
+.category-buttons {
+  display: flex;
+  gap: 10px;               /* gap-2 */
+}
+
+/* INDIVIDUAL BUTTONS */
+.category-button {
+  padding: 6px 14px;       /* px-3 py-1 */
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-button:hover {
+  background: #f2f2f2;
+}
+
+/* SONG LIST (vertical spacing between cards) */
+.category-songs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;               /* space-y-3 */
+}
+
+
+
+/* home page styles start from here */
+
+/* MAIN CONTAINER */
+.home-container {
+  max-width: 1100px;      /* same as max-w-6xl */
+  margin: 0 auto;
+  padding: 24px 16px;     /* py-6 px-4 */
+  margin-left: 2%;
+ 
+}
+
+/* Full page background for Home */
+.home-background {
+  min-height: 90.6vh;
+  width: 100%;
+  background: linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );
+  
+}
+
+
+/* PAGE TITLE */
+.home-title {
+  font-size: 40px;        /* text-2xl */
+  font-weight: bolder;
+ font-family: 'Raleway', sans-serif;
+ color:linear-gradient(135deg, #000000, #2d004d, #6a0dad);
+
+ margin-bottom: 10px; 
+  margin-left: 0%;   /* mb-4 */
+}
+
+/* RESPONSIVE GRID (same as Tailwind's grid-cols-2 sm:grid-cols-3 md:grid-cols-4) */
+.category-grid {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   /* Default: 2 columns */
+  gap: 50px;                                /* gap-4 */
+}
+
+/* For screens >= 640px (sm) → 3 columns */
+@media (min-width: 640px) {
+  .category-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For screens >= 768px (md) → 4 columns */
+@media (min-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

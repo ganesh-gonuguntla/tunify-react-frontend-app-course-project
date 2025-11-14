@@ -1,0 +1,238 @@
+/* Main container splits screen */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  /* background: #1a1a1a; */
+}
+
+/* LEFT HALF - IMAGE */
+.login-image {
+  width: 50%;
+  background-image: url('/tunify-left.png'); /* <-- replace with your image path */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+background-color: #f7f4ef;
+}
+
+/* RIGHT HALF */
+.login-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #000, #1a0026, #4b0082); */
+
+ 
+
+  background: linear-gradient(135deg, #000000, #2d004d, #6a0dad);
+}
+
+/* Form styles */
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  background: #f3f3f7;
+  padding: 32px;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-input:focus {
+  border-color: #6a5acd;
+}
+
+.login-button {
+  width: 40%;
+  padding: 10px;
+  margin: 0 auto;  
+  background: #6a5acd;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-button:hover {
+  background: #4b0082;
+}
+
+.login-button:disabled {
+  background: #777;
+  cursor: not-allowed;
+}
+
+.login-info {
+  padding: 8px 10px;
+  background: #e8ffe8;
+  color: #2f7d2f;
+  border: 1px solid #b4e7b4;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-error {
+  padding: 8px 10px;
+  background: #ffe8e8;
+  color: #c93030;
+  border: 1px solid #f5b5b5;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-register {
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-link {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link:hover
+{
+  text-decoration: underline;
+}
+
+/* registration page stylesb starts here */
+
+/* Main container split */
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* LEFT SIDE — full image */
+.register-left {
+  width: 50%;
+  background-image: url('/Registration2.png'); /* your image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* RIGHT SIDE — gradient background */
+.register-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+ background: linear-gradient(135deg, #e1e4e8, #939ca3);
+
+}
+
+/* Form box */
+.register-form {
+  width: 100%;
+  max-width: 420px;
+   background: linear-gradient(135deg, #000000, #3a0066, #9b4dff);
+  padding: 35px;
+  color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Input styles */
+.register-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.register-input:focus {
+  border-color: #6a0dad;
+}
+
+/* Button */
+.register-button {
+  width: 180px;       /* same compact size you wanted */
+  margin: 0 auto;
+  padding: 10px;
+  background: #e1e4e8;
+  color:#3a0066;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.register-button:hover {
+  background: #939ca3;  /* darker purple on hover */
+}
+
+.register-button:disabled {
+  background: #777;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.register-error {
+  padding: 8px 10px;
+  background: #ffe8e8;
+  color: #c93030;
+  border: 1px solid #f5b5b5;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Bottom link */
+.register-link-area {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.register-link {
+  color: purple;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+

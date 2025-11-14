@@ -1,0 +1,488 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "demo",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": []
+    },
+    {
+      "id": "cc1e",
+      "username": "hello",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": []
+    },
+    {
+      "id": "c06d",
+      "username": "GANESH",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": []
+    },
+    {
+      "id": "0471",
+      "username": "kanthri",
+      "likedSongIds": [
+        "101"
+      ],
+      "playlists": [],
+      "history": [
+        {
+          "songId": "101",
+          "title": "Sunrise",
+          "artist": "A. Nova",
+          "ts": 1762519330235
+        },
+        {
+          "songId": "101",
+          "title": "Sunrise",
+          "artist": "A. Nova",
+          "ts": 1762519336712
+        }
+      ]
+    },
+    {
+      "id": "e1c4",
+      "username": "AP23110011393",
+      "likedSongIds": [
+        1440783625,
+        1440848810,
+        828259377,
+        300205055,
+        1161504043,
+        1593911544,
+        158796608,
+        158796836,
+        "1593911544",
+        "158796836",
+        1065947056,
+        1445732928,
+        1443430411,
+        1323177389,
+        1443431128,
+        1641389262,
+        1739659144,
+        1590036021,
+        268532564,
+        1487502476
+      ],
+      "playlists": [],
+      "history": [
+        {
+          "songId": 1440848810,
+          "title": "Fade into You",
+          "artist": "Mazzy Star",
+          "ts": 1763124566522
+        },
+        {
+          "songId": 1440783625,
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "ts": 1763124593174
+        },
+        {
+          "songId": 1160082350,
+          "title": "When I Come Around",
+          "artist": "Green Day",
+          "ts": 1763125583039
+        },
+        {
+          "songId": 1160082350,
+          "title": "When I Come Around",
+          "artist": "Green Day",
+          "ts": 1763125585642
+        },
+        {
+          "songId": 1160082350,
+          "title": "When I Come Around",
+          "artist": "Green Day",
+          "ts": 1763125603851
+        },
+        {
+          "songId": 1440829630,
+          "title": "Hold On, We're Going Home (feat. Majid Jordan)",
+          "artist": "Drake",
+          "ts": 1763125831416
+        },
+        {
+          "songId": 1440843496,
+          "title": "One Dance (feat. Wizkid & Kyla)",
+          "artist": "Drake",
+          "ts": 1763125938460
+        },
+        {
+          "songId": 1447184844,
+          "title": "You Say",
+          "artist": "Lauren Daigle",
+          "ts": 1763125940106
+        },
+        {
+          "songId": "101",
+          "title": "Sunrise",
+          "artist": "A. Nova",
+          "ts": 1763125946604
+        },
+        {
+          "songId": "102",
+          "title": "Stardust",
+          "artist": "E. Vega",
+          "ts": 1763125947926
+        },
+        {
+          "songId": 1739659144,
+          "title": "WILDFLOWER",
+          "artist": "Billie Eilish",
+          "ts": 1763125951134
+        },
+        {
+          "songId": 1460315065,
+          "title": "We Can't Stop",
+          "artist": "Miley Cyrus",
+          "ts": 1763126170890
+        },
+        {
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1763126177425
+        },
+        {
+          "songId": 1739659144,
+          "title": "WILDFLOWER",
+          "artist": "Billie Eilish",
+          "ts": 1763126180264
+        },
+        {
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1763126183620
+        },
+        {
+          "songId": 1487502476,
+          "title": "everything i wanted",
+          "artist": "Billie Eilish",
+          "ts": 1763126186670
+        }
+      ]
+    },
+    {
+      "id": "d110",
+      "username": "test1",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Pop",
+      "slug": "pop"
+    },
+    {
+      "id": "2",
+      "name": "Rock",
+      "slug": "rock"
+    },
+    {
+      "id": "3",
+      "name": "Jazz",
+      "slug": "jazz"
+    },
+    {
+      "id": "4",
+      "name": "Hip-Hop",
+      "slug": "hiphop"
+    },
+    {
+      "id": "5",
+      "name": "Classical",
+      "slug": "classical"
+    }
+  ],
+  "songs": [
+    {
+      "id": "101",
+      "title": "Sunrise",
+      "artist": "A. Nova",
+      "category": "pop",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Corporate__Motivational_Music/Scott_Holmes_Music_-_01_-_Inspiring_Corporate.mp3",
+      "coverUrl": "https://picsum.photos/seed/sunrise/200/200"
+    },
+    {
+      "id": "102",
+      "title": "Stardust",
+      "artist": "E. Vega",
+      "category": "pop",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It's_time_for_adventure/Komiku_-_07_-_Battle_Theme.mp3",
+      "coverUrl": "https://picsum.photos/seed/stardust/200/200"
+    },
+    {
+      "id": "201",
+      "title": "Riff Rider",
+      "artist": "The Axes",
+      "category": "rock",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Daniel_Birch/Synthwave/Daniel_Birch_-_07_-_The_Major_Divide.mp3",
+      "coverUrl": "https://picsum.photos/seed/riff/200/200"
+    },
+    {
+      "id": "301",
+      "title": "Blue Night",
+      "artist": "J. Cole Trio",
+      "category": "jazz",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Lobo_Loco/Adventure/Lobo_Loco_-_01_-_Blue_Valley_ID_1244.mp3",
+      "coverUrl": "https://picsum.photos/seed/blue/200/200"
+    },
+    {
+      "id": "401",
+      "title": "Flow",
+      "artist": "MC Wave",
+      "category": "hiphop",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Glenn_Heaton/Glenn_Heaton/Glenn_Heaton_-_02_-_Generic_Hip_Hop.mp3",
+      "coverUrl": "https://picsum.photos/seed/flow/200/200"
+    },
+    {
+      "id": "501",
+      "title": "Morning Light",
+      "artist": "S. Quartet",
+      "category": "classical",
+      "audioUrl": "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Steve_Combs/Steve_Combs_-_The_Green_Album/Steve_Combs_-_03_-_Prelude_in_C.mp3",
+      "coverUrl": "https://picsum.photos/seed/morning/200/200"
+    },
+    {
+      "id": "574044008",
+      "title": "Highway to Hell",
+      "artist": "AC/DC",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cb/f4/3f/cbf43f47-747d-bcc2-19cf-6bf2c523f5d8/mzaf_9504019990576453182.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b9/c8/ef/b9c8ef42-bbc9-64df-11f8-717571f6730f/886443673458.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1772783961",
+      "title": "Rock",
+      "artist": "Stepz",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/d7/cd/b6d7cdd3-9bfd-7890-9a2d-39e251248f7c/mzaf_11646318067262278878.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/d0/ed/add0ed5b-bf41-312c-4c32-614f9c76e71b/723277880365.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1161504043",
+      "title": "That's What I Like",
+      "artist": "Bruno Mars",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ad/b1/86/adb18687-4c21-bd3d-6707-51bfb89a9339/mzaf_9755637347896433020.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1593911544",
+      "title": "911",
+      "artist": "Teddy Swims",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/b2/35/21/b235211b-da13-d1f9-282f-7501a1adb6c2/mzaf_7689049621275630883.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/98/ab/87/98ab87ec-c584-94cd-2ede-680a75230e2c/093624875284.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "158796608",
+      "title": "Cherish the Day",
+      "artist": "Sade",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4a/b7/ae/4ab7ae0b-ba8e-9306-ab0a-a9a2b0774de5/mzaf_15953387723124949678.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/18/c8/d7/18c8d7bc-8491-09e6-df0d-6e0a83ead680/mzi.wsikzifg.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "158796836",
+      "title": "Pearls",
+      "artist": "Sade",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/30/0d/61/300d6101-c0c5-73b9-9371-703aea39768d/mzaf_10580549982165026105.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/18/c8/d7/18c8d7bc-8491-09e6-df0d-6e0a83ead680/mzi.wsikzifg.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1065947056",
+      "title": "Classical Piano for Sleeping Music",
+      "artist": "Baby Lullaby Academy",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7c/0f/b8/7c0fb82d-69e7-fbf9-d2e3-41d0a512b3db/mzaf_14089028740083505569.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ab/cb/17/abcb1725-a2e0-c4bc-8666-136f5782635a/859714545211_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1445732928",
+      "title": "I Just Can't Wait to Be King",
+      "artist": "Jason Weaver, Rowan Atkinson & Laura Williams",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/ff/01/4dff017a-ee1f-f93c-573f-42f1a1002be4/mzaf_16604565949467523761.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ce/80/89/ce808921-d594-fa7f-03e8-adcc92a69de8/06PNDIM00020.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1443430411",
+      "title": "Belle",
+      "artist": "Emma Watson, Luke Evans & Ensemble - Beauty and the Beast",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/81/c8/b7/81c8b796-eb5b-7974-88b6-f120a7ef244e/mzaf_16992740977356829580.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/de/e3/49/dee3493a-14c8-0ded-8e27-05561bf8cc93/00050087362898.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1323177389",
+      "title": "Perfect Symphony",
+      "artist": "Ed Sheeran & Andrea Bocelli",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/61/15/65/6115658e-f429-952f-4472-07e631ae7d56/mzaf_7998871041113360490.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b1/5b/eb/b15beba6-aaae-ca18-e061-c0e2e2464a93/190295690922.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1443431128",
+      "title": "Evermore",
+      "artist": "Dan Stevens",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e7/29/af/e729af50-7477-05c8-07f9-673be52414ab/mzaf_17349636156772696500.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/de/e3/49/dee3493a-14c8-0ded-8e27-05561bf8cc93/00050087362898.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1641389262",
+      "title": "Romantic Homicide",
+      "artist": "d4vd",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/5d/80/cd/5d80cdc5-0d7b-dd74-5d74-b99b995c87d2/mzaf_17176630972589738085.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1440783625",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/53/1e/a6531efa-397c-eb73-ecab-9b2790c1471e/mzaf_16440344883389407474.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1440862694",
+      "title": "My Songs Know What You Did In The Dark (Light Em Up)",
+      "artist": "Fall Out Boy",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ab/74/c1/ab74c1ad-ad3f-2839-4c4a-9c2e33eab785/mzaf_6699074297831283494.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3c/55/ac/3c55acb6-3c72-b7a8-2b86-d8f028da3756/13UMGIM27299.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1160082350",
+      "title": "When I Come Around",
+      "artist": "Green Day",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a9/46/e1/a946e1a8-52b4-67e6-4365-0603a478a1ae/mzaf_16849772022084832336.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/88/83/e7/8883e74b-1b7c-0725-09de-21e4e00d54b5/093624915713.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1739659144,
+      "title": "WILDFLOWER",
+      "artist": "Billie Eilish",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/35/10/303510ea-fe5b-39c7-26cc-d0e50698393f/mzaf_12539564791562071844.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1590036021,
+      "title": "Easy On Me",
+      "artist": "Adele",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/75/28/56/75285676-dbce-d91d-7b36-070084a3546b/mzaf_5286200244455841527.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 268532564,
+      "title": "U Got It Bad",
+      "artist": "USHER",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/7e/4a/22/7e4a22c8-28b0-1a4e-930f-87d7c3748714/mzaf_16054542691124095369.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e7/1f/06/e71f062b-71c8-3b06-49d3-a0842a759684/078221471527.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1487502476,
+      "title": "everything i wanted",
+      "artist": "Billie Eilish",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/b4/97/56/b497568f-75cd-8165-8450-8123b8ed526f/mzaf_11574086005548081296.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c5/6c/b1/c56cb16a-52c3-33b5-5189-6c65028001fb/19UM1IM00404.rgb.jpg/100x100bb.jpg"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Favorites",
+      "songIds": [
+        101
+      ]
+    },
+    {
+      "id": "9992",
+      "userId": "cc1e",
+      "name": "rom-com",
+      "songIds": []
+    },
+    {
+      "id": "afc5",
+      "userId": "0471",
+      "name": "kanthri",
+      "songIds": []
+    },
+    {
+      "id": "36fd",
+      "userId": "e1c4",
+      "name": "gym",
+      "songIds": [
+        1641389262,
+        1440783625,
+        1440862694
+      ]
+    },
+    {
+      "id": "2630",
+      "userId": "e1c4",
+      "name": "sorrow",
+      "songIds": []
+    },
+    {
+      "id": "4271",
+      "userId": "e1c4",
+      "name": "feel good",
+      "songIds": [
+        1160082350,
+        1641389262
+      ]
+    },
+    {
+      "id": "cdfb",
+      "userId": "e1c4",
+      "name": "adrenaline rush",
+      "songIds": []
+    }
+  ],
+  "authUsers": [
+    {
+      "id": "1",
+      "username": "demo",
+      "password": "password"
+    },
+    {
+      "id": "84bf",
+      "username": "GANESH",
+      "password": "Ganesh@#2006"
+    },
+    {
+      "id": "a0bc",
+      "username": "kanthri",
+      "password": "123"
+    },
+    {
+      "id": "6ec7",
+      "username": "AP23110011393",
+      "password": "Ganesh@#2006"
+    },
+    {
+      "id": "3c2b",
+      "username": "test1",
+      "password": "test123"
+    }
+  ]
+}
