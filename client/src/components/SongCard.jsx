@@ -3,6 +3,7 @@ import { useAuth } from '../state/AuthContext'
 import { usePlayer } from '../state/PlayerContext'
 import { api } from '../utils/api'
 import AddToPlaylistModal from './AddToPlaylistModal'
+import "../styles/modal.css"   // ← ADD THIS
 
 export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
   const { user, updateUser } = useAuth()
@@ -23,7 +24,6 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
 
   const like = async () => {
     if (!user) return
-    // Ensure the song exists in the app DB (important for songs fetched from internet)
     await ensureSongInDb()
     const liked = Array.from(new Set([...(user.likedSongIds || []), song.id]))
     const { data } = await api.patch(`/users/${user.id}`, { likedSongIds: liked })
@@ -57,25 +57,39 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
   }
 
   return (
-    <div className="flex items-center gap-3 p-3 rounded border border-gray-200">
-      <img src={song.coverUrl} alt="cover" className="w-16 h-16 rounded object-cover" />
-      <div className="flex-1">
-        <div className="font-medium">{song.title}</div>
-        <div className="text-sm text-gray-500">{song.artist}</div>
+    <div className="songcard-container">
+      <img src={song.coverUrl} alt="cover" className="songcard-cover" />
+
+      <div className="songcard-info">
+        <div className="songcard-title">{song.title}</div>
+        <div className="songcard-artist">{song.artist}</div>
       </div>
-      <div className="flex items-center gap-2">
-        <button onClick={togglePlay} className="px-2 py-1 rounded bg-gray-900 text-white" title={playingThis ? 'Pause' : 'Play'}>
+
+      <div className="songcard-actions">
+        <button 
+          onClick={togglePlay} 
+          className="songcard-playbtn"
+          title={playingThis ? 'Pause' : 'Play'}
+        >
           {playingThis ? '⏸' : '▶'}
         </button>
+
         <button
           onClick={isLiked ? unlike : like}
-          className="btn btn-action"
-          style={{ fontSize: '16px', background: 'none', border: 'none', padding: '6px 10px', cursor: 'pointer' }}
+          className="songcard-iconbtn"
           title={isLiked ? 'Unlike' : 'Like'}
         >
           {isLiked ? '❤️' : '🤍'}
         </button>
-        <button onClick={addToPlaylist} className="btn btn-action" style={{ fontSize: '16px', background: 'none', border: 'none', padding: '6px 10px', cursor: 'pointer' }} title="Add to playlist">➕</button>
+
+        <button
+          onClick={addToPlaylist}
+          className="songcard-iconbtn"
+          id="add-playlist"
+          title="Add to playlist"
+        >
+          ➕
+        </button>
       </div>
 
       {showPlaylistModal && (
@@ -92,5 +106,4 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
     </div>
   )
 }
-
 

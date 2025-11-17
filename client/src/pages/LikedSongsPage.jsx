@@ -3,6 +3,8 @@ import { useAuth } from '../state/AuthContext'
 import { api } from '../utils/api'
 import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
+import '../styles/modal.css'
+import '../styles/modal.css'   // ← Add this new CSS file
 
 export default function LikedSongsPage() {
   const { user } = useAuth()
@@ -18,21 +20,25 @@ export default function LikedSongsPage() {
     load()
   }, [user])
 
-  const likedSongs = songs.filter((s) => (user?.likedSongIds || []).includes(s.id))
+  const likedSongs = songs.filter((s) =>
+    (user?.likedSongIds || []).includes(s.id)
+  )
 
   if (!user) return null
 
   return (
-    <main className="max-w-6xl mx-auto px-4 py-6">
-      <div className="flex items-center justify-between mb-4">
-        <h1 className="mt-3 home-title">Liked Songs</h1>
-        <div className="text-sm text-gray-500 ">{likedSongs.length} song{likedSongs.length !== 1 ? 's' : ''}</div>
+    <main className="liked-container">
+      <div className="liked-header">
+        <h1 className="liked-title">Liked Songs</h1>
+        <div className="liked-count">
+          {likedSongs.length} song{likedSongs.length !== 1 ? 's' : ''}
+        </div>
       </div>
 
       {likedSongs.length === 0 ? (
-        <div className="text-gray-500">You don't have any liked songs yet.</div>
+        <div className="liked-empty">You don't have any liked songs yet.</div>
       ) : (
-        <div className="space-y-3">
+        <div className="liked-list">
           {likedSongs.map((s) => (
             <SongCard key={s.id} song={s} />
           ))}

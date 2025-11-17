@@ -172,7 +172,7 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
         </div>
 
         <div className="modal-footer">
-          <button className="btn btn-secondary" onClick={() => renamePlaylist()} disabled={loading}>
+          <button className="btn btn-secondary rename" onClick={() => renamePlaylist()} disabled={loading}>
             Rename
           </button>
           <button className="btn btn-danger" onClick={() => deletePlaylist()} disabled={loading}>

@@ -1,7 +1,7 @@
 /* PAGE WRAPPER */
 .profile-page {
   width: 100%;
-  height:150vh;
+  min-height:90.6vh;
   background: linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );
   padding: 32px 20px;
   display: flex;

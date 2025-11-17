@@ -12,7 +12,8 @@ export default function Navbar() {
     <header className="navbar">
 
       {/* LEFT SIDE - LOGO */}
-        <h1 className="navbar-logo">Tunify</h1>
+      <h1 className="navbar-logo"> Tunify <i className="bi bi-music-note-beamed logo-music-icon"></i> </h1>
+
 
 
       <div className="navbar-container">
@@ -26,6 +27,14 @@ export default function Navbar() {
               Home
             </Link>
           )}
+
+          <Link
+            to="/browse"
+            className="navbar-home-btn"
+            style={{ marginLeft: location.pathname !== '/' ? '10px' : '0' }}
+          >
+            Browse
+          </Link>
           
           <Link to="/profile" className="navbar-username">
             {user?.username || "Profile"}

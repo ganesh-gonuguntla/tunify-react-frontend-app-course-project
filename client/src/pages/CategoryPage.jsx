@@ -10,7 +10,7 @@ export default function CategoryPage() {
   const { slug } = useParams()
   const [songs, setSongs] = useState([])
   const { playSongs, setShuffle, shuffle } = usePlayer()
-  const [useInternet, setUseInternet] = useState(false)
+  const [useInternet, setUseInternet] = useState(true)
 
   useEffect(() => {
     const load = async () => {
@@ -47,6 +47,7 @@ export default function CategoryPage() {
 
   const playAllShuffled = () => {
     const shuffled = [...songs].sort(() => Math.random() - 0.5)
+    setSongs(shuffled) // Update UI to show shuffled order
     setShuffle(true)
     playSongs(shuffled, 0)
   }

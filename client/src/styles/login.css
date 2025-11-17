@@ -236,3 +236,29 @@ background-color: #f7f4ef;
   text-decoration: underline;
 }
 
+/* Password validation errors */
+.password-errors {
+  margin-top: 8px;
+  padding: 10px;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.password-errors-title {
+  font-weight: 600;
+  color: #856404;
+  margin-bottom: 6px;
+}
+
+.password-errors-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #856404;
+}
+
+.password-errors-list li {
+  margin: 4px 0;
+}
+

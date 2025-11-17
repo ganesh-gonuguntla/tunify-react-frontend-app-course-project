@@ -10,9 +10,32 @@
     {
       "id": "cc1e",
       "username": "hello",
-      "likedSongIds": [],
+      "likedSongIds": [
+        "574044008",
+        "201",
+        "1772783961"
+      ],
       "playlists": [],
-      "history": []
+      "history": [
+        {
+          "songId": "1440862694",
+          "title": "My Songs Know What You Did In The Dark (Light Em Up)",
+          "artist": "Fall Out Boy",
+          "ts": 1763355130144
+        },
+        {
+          "songId": "1440862694",
+          "title": "My Songs Know What You Did In The Dark (Light Em Up)",
+          "artist": "Fall Out Boy",
+          "ts": 1763355148543
+        },
+        {
+          "songId": "1440783625",
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "ts": 1763355150678
+        }
+      ]
     },
     {
       "id": "c06d",
@@ -66,16 +89,13 @@
         1739659144,
         1590036021,
         268532564,
-        1487502476
+        1487502476,
+        "1161504043",
+        "1323177389",
+        "1443430411"
       ],
       "playlists": [],
       "history": [
-        {
-          "songId": 1440848810,
-          "title": "Fade into You",
-          "artist": "Mazzy Star",
-          "ts": 1763124566522
-        },
         {
           "songId": 1440783625,
           "title": "Smells Like Teen Spirit",
@@ -83,34 +103,10 @@
           "ts": 1763124593174
         },
         {
-          "songId": 1160082350,
-          "title": "When I Come Around",
-          "artist": "Green Day",
-          "ts": 1763125583039
-        },
-        {
-          "songId": 1160082350,
-          "title": "When I Come Around",
-          "artist": "Green Day",
-          "ts": 1763125585642
-        },
-        {
-          "songId": 1160082350,
-          "title": "When I Come Around",
-          "artist": "Green Day",
-          "ts": 1763125603851
-        },
-        {
           "songId": 1440829630,
           "title": "Hold On, We're Going Home (feat. Majid Jordan)",
           "artist": "Drake",
           "ts": 1763125831416
-        },
-        {
-          "songId": 1440843496,
-          "title": "One Dance (feat. Wizkid & Kyla)",
-          "artist": "Drake",
-          "ts": 1763125938460
         },
         {
           "songId": 1447184844,
@@ -165,6 +161,84 @@
           "title": "everything i wanted",
           "artist": "Billie Eilish",
           "ts": 1763126186670
+        },
+        {
+          "songId": "1641389262",
+          "title": "Romantic Homicide",
+          "artist": "d4vd",
+          "ts": 1763352440467
+        },
+        {
+          "songId": "1641389262",
+          "title": "Romantic Homicide",
+          "artist": "d4vd",
+          "ts": 1763352449068
+        },
+        {
+          "songId": "574044008",
+          "title": "Highway to Hell",
+          "artist": "AC/DC",
+          "ts": 1763352452061
+        },
+        {
+          "songId": "574044008",
+          "title": "Highway to Hell",
+          "artist": "AC/DC",
+          "ts": 1763352457436
+        },
+        {
+          "songId": "201",
+          "title": "Riff Rider",
+          "artist": "The Axes",
+          "ts": 1763352459032
+        },
+        {
+          "songId": "201",
+          "title": "Riff Rider",
+          "artist": "The Axes",
+          "ts": 1763352462466
+        },
+        {
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1763352469990
+        },
+        {
+          "songId": 1358462132,
+          "title": "Jingle Bell Rock",
+          "artist": "Bobby Helms",
+          "ts": 1763352471832
+        },
+        {
+          "songId": "1443430411",
+          "title": "Belle",
+          "artist": "Emma Watson, Luke Evans & Ensemble - Beauty and the Beast",
+          "ts": 1763352639577
+        },
+        {
+          "songId": "1443430411",
+          "title": "Belle",
+          "artist": "Emma Watson, Luke Evans & Ensemble - Beauty and the Beast",
+          "ts": 1763352658152
+        },
+        {
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1763352661812
+        },
+        {
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1763352668303
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1763352669978
         }
       ]
     },
@@ -174,6 +248,243 @@
       "likedSongIds": [],
       "playlists": [],
       "history": []
+    },
+    {
+      "id": "f0d0",
+      "username": "the____gan",
+      "likedSongIds": [
+        1536022052,
+        1161539473,
+        1440666111,
+        255343130,
+        "301"
+      ],
+      "playlists": [],
+      "history": [
+        {
+          "songId": 1161539473,
+          "title": "Holiday",
+          "artist": "Green Day",
+          "ts": 1763182904126
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1763185359096
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1763185994480
+        },
+        {
+          "songId": "301",
+          "title": "Blue Night",
+          "artist": "J. Cole Trio",
+          "ts": 1763186003340
+        },
+        {
+          "songId": "1739659144",
+          "title": "WILDFLOWER",
+          "artist": "Billie Eilish",
+          "ts": 1763351123297
+        },
+        {
+          "songId": "1739659144",
+          "title": "WILDFLOWER",
+          "artist": "Billie Eilish",
+          "ts": 1763351132233
+        },
+        {
+          "songId": "102",
+          "title": "Stardust",
+          "artist": "E. Vega",
+          "ts": 1763351146987
+        },
+        {
+          "songId": 386153729,
+          "title": "My Boo",
+          "artist": "Alicia Keys & USHER",
+          "ts": 1763351150446
+        },
+        {
+          "songId": 386153729,
+          "title": "My Boo",
+          "artist": "Alicia Keys & USHER",
+          "ts": 1763351159586
+        },
+        {
+          "songId": 386153729,
+          "title": "My Boo",
+          "artist": "Alicia Keys & USHER",
+          "ts": 1763351167255
+        },
+        {
+          "songId": 255343130,
+          "title": "If I Ain't Got You",
+          "artist": "Alicia Keys",
+          "ts": 1763351182388
+        },
+        {
+          "songId": 1485802970,
+          "title": "Adore You",
+          "artist": "Harry Styles",
+          "ts": 1763351194374
+        },
+        {
+          "songId": 1468058173,
+          "title": "Lover",
+          "artist": "Taylor Swift",
+          "ts": 1763351211566
+        },
+        {
+          "songId": "102",
+          "title": "Stardust",
+          "artist": "E. Vega",
+          "ts": 1763351225569
+        },
+        {
+          "songId": "1487502476",
+          "title": "everything i wanted",
+          "artist": "Billie Eilish",
+          "ts": 1763351230984
+        },
+        {
+          "songId": 255343130,
+          "title": "If I Ain't Got You",
+          "artist": "Alicia Keys",
+          "ts": 1763351247655
+        },
+        {
+          "songId": "1590036021",
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1763351262138
+        },
+        {
+          "songId": 255343130,
+          "title": "If I Ain't Got You",
+          "artist": "Alicia Keys",
+          "ts": 1763351378157
+        },
+        {
+          "songId": "301",
+          "title": "Blue Night",
+          "artist": "J. Cole Trio",
+          "ts": 1763351457632
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1763351468218
+        },
+        {
+          "songId": "158796608",
+          "title": "Cherish the Day",
+          "artist": "Sade",
+          "ts": 1763351470145
+        },
+        {
+          "songId": "158796608",
+          "title": "Cherish the Day",
+          "artist": "Sade",
+          "ts": 1763351474414
+        },
+        {
+          "songId": "158796836",
+          "title": "Pearls",
+          "artist": "Sade",
+          "ts": 1763351494561
+        },
+        {
+          "songId": 1585892546,
+          "title": "Jazz (We've Got) [Radio Version]",
+          "artist": "A Tribe Called Quest",
+          "ts": 1763351496384
+        }
+      ]
+    },
+    {
+      "id": "b33c",
+      "username": "the____ganesh",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": []
+    },
+    {
+      "id": "c178",
+      "username": "the____gane",
+      "likedSongIds": [
+        1440754487,
+        1049528934,
+        1445732924
+      ],
+      "playlists": [],
+      "history": [
+        {
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1763358020221
+        },
+        {
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1763358027243
+        },
+        {
+          "songId": 574044008,
+          "title": "Highway to Hell",
+          "artist": "AC/DC",
+          "ts": 1763358401707
+        },
+        {
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1763359371103
+        },
+        {
+          "songId": 1358462132,
+          "title": "Jingle Bell Rock",
+          "artist": "Bobby Helms",
+          "ts": 1763359408713
+        },
+        {
+          "songId": 945568998,
+          "title": "Dani California",
+          "artist": "Red Hot Chili Peppers",
+          "ts": 1763359438477
+        },
+        {
+          "songId": 1739111152,
+          "title": "Kurchi Madathapetti",
+          "artist": "LK Laxmikant & Stuti Sinha",
+          "ts": 1763359451868
+        },
+        {
+          "songId": 1600624017,
+          "title": "Sanchari (From \"Radhe Shyam\")",
+          "artist": "Anirudh Ravichander & Justin Prabhakaran",
+          "ts": 1763359469456
+        },
+        {
+          "songId": 1851988371,
+          "title": "Globetrotter (From \"Globetrotter\")",
+          "artist": "M.M. Keeravani, Shruti Haasan, Kaala Bhairava & Chaitanya Prasad",
+          "ts": 1763359490687
+        },
+        {
+          "songId": 1278916141,
+          "title": "Raavana",
+          "artist": "Divya Kumar",
+          "ts": 1763359920743
+        }
+      ]
     }
   ],
   "categories": [
@@ -373,7 +684,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/88/83/e7/8883e74b-1b7c-0725-09de-21e4e00d54b5/093624915713.jpg/100x100bb.jpg"
     },
     {
-      "id": 1739659144,
+      "id": "1739659144",
       "title": "WILDFLOWER",
       "artist": "Billie Eilish",
       "category": "pop",
@@ -381,7 +692,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/100x100bb.jpg"
     },
     {
-      "id": 1590036021,
+      "id": "1590036021",
       "title": "Easy On Me",
       "artist": "Adele",
       "category": "pop",
@@ -389,7 +700,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/100x100bb.jpg"
     },
     {
-      "id": 268532564,
+      "id": "268532564",
       "title": "U Got It Bad",
       "artist": "USHER",
       "category": "pop",
@@ -397,12 +708,172 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e7/1f/06/e71f062b-71c8-3b06-49d3-a0842a759684/078221471527.jpg/100x100bb.jpg"
     },
     {
-      "id": 1487502476,
+      "id": "1487502476",
       "title": "everything i wanted",
       "artist": "Billie Eilish",
       "category": "pop",
       "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/b4/97/56/b497568f-75cd-8165-8450-8123b8ed526f/mzaf_11574086005548081296.plus.aac.p.m4a",
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c5/6c/b1/c56cb16a-52c3-33b5-5189-6c65028001fb/19UM1IM00404.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1536022052",
+      "title": "Good Die Young",
+      "artist": "Koe Wetzel",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b4/59/e8/b459e82b-b38c-24a7-6b7a-f564bbefa869/mzaf_10491823317648983199.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/3e/70/5f3e7014-5813-f1bd-c1f9-d47142e01052/886448831730.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1161539473",
+      "title": "Holiday",
+      "artist": "Green Day",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/6a/75/e36a7500-205e-a5f2-0032-ab4508c8f006/mzaf_17139100690064184162.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0e/17/f0/0e17f011-aadf-d4d1-1c7e-b61ce39f968b/093624947301.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1440666111",
+      "title": "Bring Me to Life",
+      "artist": "Evanescence",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/34/c4/3e34c400-9ad9-3859-6988-496c27728be4/mzaf_14936938522678789093.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/10/4c/21/104c21e6-9ef0-4d3a-d1bd-d47167f121e5/00601501406300.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "255343130",
+      "title": "If I Ain't Got You",
+      "artist": "Alicia Keys",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7d/ff/22/7dff2255-7511-7d04-b074-5f07b9e2719d/mzaf_12396414123414647550.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c2/07/c6/c207c6ee-e3f1-cad2-1259-69a3ebd08b5c/828765571227.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1585892546",
+      "title": "Jazz (We've Got) [Radio Version]",
+      "artist": "A Tribe Called Quest",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/ca/dc/1ccadcad-a482-0df6-6b7b-b567f097165e/mzaf_2171187046549382956.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ab/2e/3a/ab2e3a42-1c8b-9f3f-3d36-da74de7be595/886449538959.jpg/100x100bb.jpg"
+    },
+    {
+      "id": "1358462132",
+      "title": "Jingle Bell Rock",
+      "artist": "Bobby Helms",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/dd/54/91dd54a1-22a4-5e8b-ea30-25ecad8f6227/mzaf_1754360905466369426.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e8/18/6b/e8186bf9-5696-e721-b273-a5f173caf8c1/18UMGIM07062.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1440754487,
+      "title": "Somebody That I Used to Know (feat. Kimbra)",
+      "artist": "Gotye",
+      "category": "jazz",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f9/9c/55/f99c553e-7be1-91dc-b55e-3da1aad29bba/mzaf_5038171343466446420.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b3/8a/98/b38a9867-2a9c-de2f-2d80-c624fb2200ec/11UMGIM19347.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1049528934,
+      "title": "The House (Instrumental)",
+      "artist": "John Williams",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/49/60/7f4960de-6737-ed6e-c54a-efce8f8654db/mzaf_11834678546029821523.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/01/3b/9c013b6d-a316-3119-a94a-c2ef2fbfbefa/886445465518.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1445732924,
+      "title": "Circle of Life",
+      "artist": "Carmen Twillie & Lebo M",
+      "category": "classical",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/da/d2/f4dad2ee-60e3-29e2-7cfc-3675b3c4ce23/mzaf_10261470751447360609.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ce/80/89/ce808921-d594-fa7f-03e8-adcc92a69de8/06PNDIM00020.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1278916141,
+      "title": "Raavana",
+      "artist": "Divya Kumar",
+      "category": "raavana",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/d3/ef/68d3ef50-9629-832e-cba9-254a00ebf7e9/mzaf_7621100863136857536.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/5d/ce/b65dce33-bfd4-a378-1c6c-51b9ffc9f9ce/8903431652430_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1851988371,
+      "title": "Globetrotter (From \"Globetrotter\")",
+      "artist": "M.M. Keeravani, Shruti Haasan, Kaala Bhairava & Chaitanya Prasad",
+      "category": "globetrotter",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/22/52/0c22520a-7591-5e92-0e0b-07cb6aae8f6b/mzaf_9492733837266452941.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/ed/72/3aed721f-ca30-72a0-8ec2-62733a5f37d2/8903431148858_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1676212781,
+      "title": "Chamkeela Angeelesi (From \"Dasara\")",
+      "artist": "Ram Miriyala, Dhee, Santhosh Narayanan & Kasarla Shyam",
+      "category": "dasara",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8c/fc/56/8cfc5682-1e7f-1d71-c29d-0df21c8e4f12/mzaf_14446436355118617105.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f1/fa/31/f1fa3174-2f3c-b479-ef62-58778d7f23b9/197188292089.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1671542094,
+      "title": "Ori Vaari (From \"Dasara\")",
+      "artist": "Santhosh Narayanan & Shreemani",
+      "category": "dasara",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a9/7b/9e/a97b9e4b-df15-1422-f90d-c4e7233f57f9/mzaf_10367111490896441789.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/22/7d/7a/227d7a12-e098-8729-5754-98b087406b75/197188146542.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1847833743,
+      "title": "Baahubali - The Story",
+      "artist": "M.M. Keeravani",
+      "category": "baahubali",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/2a/36/3a2a3648-539a-3104-a02c-0c73f36c89cf/mzaf_14594623625305054997.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/bc/6f/48bc6f92-07a6-faf3-8de1-e400eff9d6fc/8905750050393.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1594544794,
+      "title": "Naatu Naatu (From \"RRR\")",
+      "artist": "Rahul Sipligunj, Kaala Bhairava & M.M. Keeravani",
+      "category": "rrr",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/cd/d2/d6/cdd2d67e-3d00-c170-fffe-9c10661bc4f3/mzaf_13420155524554687629.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/39/14/dd3914e5-a2f3-b355-51f3-9a1f0e3ca246/8903431853592_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1602054632,
+      "title": "Komuram Bheemudo (From \"RRR\")",
+      "artist": "Kaala Bhairava & M.M. Keeravani",
+      "category": "komuram",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6b/64/10/6b6410f8-3620-44af-8da7-378da8959bc3/mzaf_8455483532068537598.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/f8/92/a9f892cd-6f28-a3da-ea07-8a849a71ad0e/8903431859501_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1705609011,
+      "title": "Hungry Cheetah (From \"They Call Him OG\")",
+      "artist": "Thaman S.",
+      "category": "thaman",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/55/12/48/55124874-ee8e-eae4-966b-b2ec1054c14f/mzaf_5479392496924546923.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/27/56/f8/2756f83d-180c-6de2-2d8c-500d1bda3ec6/196871444989.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1839944543,
+      "title": "Guns and Roses (From \"They Call Him OG\")",
+      "artist": "Thaman S. & Harsha Darivemula",
+      "category": "thaman",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/38/72/9e/38729efe-abe4-29d7-3afe-3847933681ee/mzaf_10744584521674702011.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/d3/56/a0d35649-3405-07ea-3ded-a08b1dbeedad/196873615233.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1820451080,
+      "title": "Sarkaru Raa",
+      "artist": "Thaman S. & Kasarla Shyam",
+      "category": "thaman",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/5c/59/715c5967-2888-acb2-f5cc-e4f331a52e25/mzaf_11693388200634208836.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/80/19/28801912-0b5c-47ab-3fb1-30f754c73ec3/cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1529565676,
+      "title": "Yeda Poinado",
+      "artist": "Nikhita Srivalli, Penchal Das & Kailash Kher",
+      "category": "yeda",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/84/90/42849041-ce72-299b-9750-116bcbd2b506/mzaf_12840988151250953968.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/2f/0f/9c2f0f78-db29-16b5-c414-6d9b7f7ab7a3/8718857672425.png/100x100bb.jpg"
     }
   ],
   "playlists": [
@@ -415,12 +886,6 @@
       ]
     },
     {
-      "id": "9992",
-      "userId": "cc1e",
-      "name": "rom-com",
-      "songIds": []
-    },
-    {
       "id": "afc5",
       "userId": "0471",
       "name": "kanthri",
@@ -429,11 +894,12 @@
     {
       "id": "36fd",
       "userId": "e1c4",
-      "name": "gym",
+      "name": "hwo",
       "songIds": [
         1641389262,
         1440783625,
-        1440862694
+        1440862694,
+        "1443430411"
       ]
     },
     {
@@ -448,14 +914,57 @@
       "name": "feel good",
       "songIds": [
         1160082350,
-        1641389262
+        1641389262,
+        1358462132
       ]
     },
     {
-      "id": "cdfb",
+      "id": "05f7",
       "userId": "e1c4",
-      "name": "adrenaline rush",
+      "name": "kel",
       "songIds": []
+    },
+    {
+      "id": "96e1",
+      "userId": "e1c4",
+      "name": "l",
+      "songIds": []
+    },
+    {
+      "id": "d52e",
+      "userId": "cc1e",
+      "name": "gan",
+      "songIds": [
+        "1440862694",
+        "574044008"
+      ]
+    },
+    {
+      "id": "eab7",
+      "userId": "cc1e",
+      "name": "rock",
+      "songIds": [
+        "1772783961",
+        "574044008"
+      ]
+    },
+    {
+      "id": "1e0a",
+      "userId": "c178",
+      "name": "telugu hits",
+      "songIds": [
+        1851988371,
+        1676212781,
+        1671542094,
+        1278916141,
+        1847833743,
+        1594544794,
+        1602054632,
+        1705609011,
+        1839944543,
+        1820451080,
+        1529565676
+      ]
     }
   ],
   "authUsers": [
@@ -483,6 +992,26 @@
       "id": "3c2b",
       "username": "test1",
       "password": "test123"
+    },
+    {
+      "id": "ce35",
+      "username": "the____gan",
+      "password": "gan123"
+    },
+    {
+      "id": "dca9",
+      "username": "hello",
+      "password": "123"
+    },
+    {
+      "id": "cb28",
+      "username": "the____ganesh",
+      "password": "Ganesh@#2006"
+    },
+    {
+      "id": "5e64",
+      "username": "the____gane",
+      "password": "Ganesh@#2006"
     }
   ]
 }

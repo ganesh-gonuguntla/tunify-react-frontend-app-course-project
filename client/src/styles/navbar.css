@@ -29,6 +29,16 @@
   margin-left:3%;
 }
 
+.navbar-logo:hover{
+  transform: scale(1.02);
+}
+
+.logo-music-icon:hover {
+  transform: rotate(360deg);
+  transition: transform 0.8s ease;
+}
+
+
 /* RIGHT SECTION: username + logout */
 .navbar-right {
   display: flex;
@@ -169,10 +179,11 @@
 
 /* MAIN WRAPPER */
 .category-page {
-  max-width: 900px;        /* same as max-w-4xl */
+  max-width: 100%;        /* same as max-w-4xl */
   margin: 0 auto;
-  padding: 24px 16px;      /* py-6 px-4 */
-  
+  padding: 24px 16px;  
+  background:  linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );    /* py-6 px-4 */
+  min-height: 90vh;
 }
 
 /* HEADER */
@@ -185,9 +196,13 @@
 
 /* PAGE TITLE */
 .category-title {
-  font-size: 28px;         /* text-2xl */
-  font-weight: bold;
-  text-transform: capitalize;
+  font-size: 40px;        /* text-2xl */
+  font-weight: bolder;
+ font-family: 'Raleway', sans-serif;
+ color:linear-gradient(135deg, #000000, #2d004d, #6a0dad);
+text-transform: capitalize;
+ margin-bottom: 10px; 
+  margin-left: 0%; 
 }
 
 /* BUTTONS WRAPPER */
@@ -215,7 +230,9 @@
 .category-songs {
   display: flex;
   flex-direction: column;
-  gap: 12px;               /* space-y-3 */
+  gap: 13px;   
+  align-items: center;   
+      /* space-y-3 */
 }
 
 
