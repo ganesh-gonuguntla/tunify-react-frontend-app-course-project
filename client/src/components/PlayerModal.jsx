@@ -17,6 +17,7 @@ export default function PlayerModal() {
     setVolume,
     loop,
     setLoop,
+    closePlayer,
   } = usePlayer()
 
   // Don't show modal if no song is loaded
@@ -57,6 +58,8 @@ export default function PlayerModal() {
               <div className="player-song-artist">{current.artist}</div>
             </div>
           </div>
+          {/* close button */}
+          <button className="player-close-btn" onClick={closePlayer}>✖</button>
 
           {/* Progress Bar */}
           <div className="player-progress-section">

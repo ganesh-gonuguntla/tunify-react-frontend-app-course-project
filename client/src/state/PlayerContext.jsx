@@ -22,25 +22,25 @@ export const PlayerProvider = ({ children }) => {
 
   const playSongs = (songs, startIndex = 0) => {
     if (!songs || songs.length === 0) return
-    
+
     const newSong = songs[startIndex]
     if (!newSong) return
-    
+
     // Stop current audio before switching
     const audio = audioRef.current
     audio.pause()
     audio.currentTime = 0
     audio.src = ''
-    
+
     // Update state
     setQueue(songs)
     setCurrentIndex(startIndex)
     setIsPlaying(false)
-    
+
     // Immediately play the new song (don't wait for state update)
     audio.src = newSong.audioUrl
     audio.load()
-    
+
     audio.play()
       .then(() => {
         setIsPlaying(true)
@@ -51,7 +51,7 @@ export const PlayerProvider = ({ children }) => {
           api
             .patch(`/users/${user.id}`, { history })
             .then((res) => updateUser(res.data))
-            .catch(() => {})
+            .catch(() => { })
         }
       })
       .catch((err) => {
@@ -63,7 +63,7 @@ export const PlayerProvider = ({ children }) => {
   const play = () => {
     if (!current) return
     const audio = audioRef.current
-    
+
     // If already playing the same song, just resume
     if (audio.src === current.audioUrl && !isPlaying) {
       audio.play()
@@ -74,7 +74,7 @@ export const PlayerProvider = ({ children }) => {
         })
       return
     }
-    
+
     // Otherwise, it's a new song - use shouldPlay flag to trigger useEffect
     setShouldPlay(true)
   }
@@ -102,7 +102,7 @@ export const PlayerProvider = ({ children }) => {
       audio.currentTime = 0
       audio.src = current.audioUrl
       audio.load()
-      
+
       audio.play()
         .then(() => {
           setIsPlaying(true)
@@ -114,7 +114,7 @@ export const PlayerProvider = ({ children }) => {
             api
               .patch(`/users/${user.id}`, { history })
               .then((res) => updateUser(res.data))
-              .catch(() => {})
+              .catch(() => { })
           }
         })
         .catch((err) => {
@@ -163,19 +163,19 @@ export const PlayerProvider = ({ children }) => {
   // Handle audio time updates and metadata
   useEffect(() => {
     const audio = audioRef.current
-    
+
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime)
     }
-    
+
     const handleLoadedMetadata = () => {
       setDuration(audio.duration || 0)
     }
-    
+
     const handleEnded = () => {
       setIsPlaying(false)
       setCurrentTime(0)
-      
+
       // If loop is enabled, audio.loop will handle restart automatically
       // Only proceed to next song if loop is disabled
       if (!loop) {
@@ -243,6 +243,19 @@ export const PlayerProvider = ({ children }) => {
     setVolume(newVolume)
   }
 
+
+  // player close button
+
+  const closePlayer = () => {
+  const audio = audioRef.current
+  audio.pause()
+  audio.currentTime = 0
+  audio.src = ''
+  setIsPlaying(false)
+  setQueue([])
+  setCurrentIndex(-1)
+}
+
   const value = useMemo(
     () => ({
       current,
@@ -262,6 +275,7 @@ export const PlayerProvider = ({ children }) => {
       setVolume: setVolumeLevel,
       loop,
       setLoop,
+      closePlayer,
     }),
     [current, isPlaying, queue, shuffle, currentTime, duration, volume, loop]
   )
