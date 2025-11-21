@@ -15,13 +15,18 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
   const [allPlaylists, setAllPlaylists] = useState([])
 
   useEffect(() => {
-    const filtered = songs.filter((s) => (playlist.songIds || []).includes(s.id))
+    const filtered = songs.filter((s) => (playlist.songIds || []).map(String).includes(String(s.id)))
     setPlaylistSongs(filtered)
   }, [songs, playlist])
 
   const togglePlay = (song) => {
     if (current?.id !== song.id) {
-      playSongs([song], 0)
+      const idx = playlistSongs.findIndex((s) => s.id === song.id)
+      if (idx !== -1) {
+        playSongs(playlistSongs, idx)
+      } else {
+        playSongs([song], 0)
+      }
     } else {
       isPlaying ? pause() : play()
     }
@@ -30,10 +35,10 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
   const toggleLike = async (song) => {
     if (!user) return
     try {
-      const isLiked = (user.likedSongIds || []).includes(song.id)
+      const isLiked = (user.likedSongIds || []).map(String).includes(String(song.id))
       let next
       if (isLiked) {
-        next = (user.likedSongIds || []).filter((id) => id !== song.id)
+        next = (user.likedSongIds || []).filter((id) => String(id) !== String(song.id))
       } else {
         next = Array.from(new Set([...(user.likedSongIds || []), song.id]))
       }
@@ -61,7 +66,7 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
     try {
       const next = {
         ...playlist,
-        songIds: (playlist.songIds || []).filter((id) => id !== songId),
+        songIds: (playlist.songIds || []).filter((id) => String(id) !== String(songId)),
       }
       const { data } = await api.patch(`/playlists/${playlist.id}`, next)
       setPlaylistSongs(playlistSongs.filter((s) => s.id !== songId))
@@ -124,7 +129,7 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
             <div className="playlist-songs-list">
               {playlistSongs.map((song) => {
                 const playingThis = current?.id === song.id && isPlaying
-                const isLiked = (user?.likedSongIds || []).includes(song.id)
+                const isLiked = (user?.likedSongIds || []).map(String).includes(String(song.id))
                 return (
                   <div key={song.id} className="playlist-song-item">
                     <div className="song-info">

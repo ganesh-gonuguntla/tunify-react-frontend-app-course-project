@@ -49,7 +49,7 @@ export default function ProfilePage() {
    *  LIKED SONGS (computed from user.likedSongIds)
    * ----------------------------------------- */
   const likedSongs = useMemo(() => {
-    return songs.filter((s) => (user?.likedSongIds || []).includes(s.id))
+    return songs.filter((s) => (user?.likedSongIds || []).map(String).includes(String(s.id)))
   }, [songs, user])
 
   /* -----------------------------------------
@@ -105,7 +105,7 @@ export default function ProfilePage() {
   const removeSongFromPlaylist = async (pl, songId) => {
     const updated = {
       ...pl,
-      songIds: (pl.songIds || []).filter((id) => id !== songId)
+      songIds: (pl.songIds || []).filter((id) => String(id) !== String(songId))
     }
     await api.patch(`/playlists/${pl.id}`, updated)
     refreshPlaylists()
@@ -114,6 +114,20 @@ export default function ProfilePage() {
   /* -----------------------------------------
    *  MAIN PAGE UI
    * ----------------------------------------- */
+  const playHistorySong = (index) => {
+    // Map history items to full song objects
+    const historySongs = history.map(h => songs.find(s => String(s.id) === String(h.songId))).filter(Boolean)
+
+    // Find the clicked song in the mapped list
+    const clickedHistoryItem = history[index]
+    const songIndex = historySongs.findIndex(s => String(s.id) === String(clickedHistoryItem.songId))
+
+    if (songIndex !== -1) {
+      setShuffle(false)
+      playSongs(historySongs, songIndex)
+    }
+  }
+
   return (
     <main className="profile-page">
 
@@ -153,57 +167,63 @@ export default function ProfilePage() {
       </section>
 
       {/* ======== LISTENING HISTORY ======== */}
-          <section className="profile-section">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <h2 className="profile-title mb-4">Listening History</h2>
-              <div>
-                {history.length > 0 && (
-                  <button
-                    className=" clear-all mb-4"
-                    onClick={async () => {
-                      if (!user) return
-                      if (!window.confirm('Clear all listening history?')) return
-                      const { data } = await api.patch(`/users/${user.id}`, { history: [] })
-                      updateUser(data)
-                      setHistory([])
-                    }}
-                  >
-                    Clear all
-                  </button>
-                )}
-              </div>
-            </div>
-
-            {history.length === 0 ? (
-              <div className="profile-empty">No history yet.</div>
-            ) : (
-              <ul className="history-list">
-                {history.map((h, idx) => (
-                  <li key={idx} className="history-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <div style={{ flex: 1 }}>
-                      {h.title} — {h.artist}
-                    </div>
-                      <button
-                        className="cross"
-                        onClick={async () => {
-                          if (!user) return
-                          // Build next history by removing matching item (by id if present, otherwise by title+artist)
-                          const nextHistory = (user.history || []).filter((it) => {
-                            if (it.id && h.id) return it.id !== h.id
-                            return !(it.title === h.title && it.artist === h.artist)
-                          })
-                          const { data } = await api.patch(`/users/${user.id}`, { history: nextHistory })
-                          updateUser(data)
-                          setHistory(data.history || [])
-                        }}
-                      >
-                        ✕
-                      </button>
-                  </li>
-                ))}
-              </ul>
+      <section className="profile-section">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <h2 className="profile-title mb-4">Listening History</h2>
+          <div>
+            {history.length > 0 && (
+              <button
+                className=" clear-all mb-4"
+                onClick={async () => {
+                  if (!user) return
+                  if (!window.confirm('Clear all listening history?')) return
+                  const { data } = await api.patch(`/users/${user.id}`, { history: [] })
+                  updateUser(data)
+                  setHistory([])
+                }}
+              >
+                Clear all
+              </button>
             )}
-          </section>
+          </div>
+        </div>
+
+        {history.length === 0 ? (
+          <div className="profile-empty">No history yet.</div>
+        ) : (
+          <ul className="history-list">
+            {history.map((h, idx) => (
+              <li
+                key={idx}
+                className="history-item"
+                style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}
+                onClick={() => playHistorySong(idx)}
+              >
+                <div style={{ flex: 1 }}>
+                  {h.title} — {h.artist}
+                </div>
+                <button
+                  className="cross"
+                  onClick={async (e) => {
+                    e.stopPropagation() // Prevent playing when deleting
+                    if (!user) return
+                    // Build next history by removing matching item (by id if present, otherwise by title+artist)
+                    const nextHistory = (user.history || []).filter((it) => {
+                      if (it.id && h.id) return String(it.id) !== String(h.id)
+                      return !(it.title === h.title && it.artist === h.artist)
+                    })
+                    const { data } = await api.patch(`/users/${user.id}`, { history: nextHistory })
+                    updateUser(data)
+                    setHistory(data.history || [])
+                  }}
+                >
+                  ✕
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
 
       {selectedPlaylist && (
         <PlaylistModal

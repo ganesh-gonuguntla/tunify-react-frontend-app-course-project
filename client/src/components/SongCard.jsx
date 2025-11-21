@@ -5,18 +5,22 @@ import { api } from '../utils/api'
 import AddToPlaylistModal from './AddToPlaylistModal'
 import "../styles/modal.css"   // ← ADD THIS
 
-export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
+export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueue, index }) {
   const { user, updateUser } = useAuth()
   const { current, isPlaying, playSongs, pause, play } = usePlayer()
   const [showPlaylistModal, setShowPlaylistModal] = useState(false)
   const [playlists, setPlaylists] = useState([])
 
   const playingThis = current?.id === song.id && isPlaying
-  const isLiked = Boolean(user?.likedSongIds?.includes(song.id))
+  const isLiked = Boolean((user?.likedSongIds || []).map(String).includes(String(song.id)))
 
   const togglePlay = () => {
     if (current?.id !== song.id) {
-      playSongs([song], 0)
+      if (contextQueue && typeof index === 'number') {
+        playSongs(contextQueue, index)
+      } else {
+        playSongs([song], 0)
+      }
     } else {
       playingThis ? pause() : play()
     }
@@ -33,7 +37,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
 
   const unlike = async () => {
     if (!user) return
-    const next = (user.likedSongIds || []).filter((id) => id !== song.id)
+    const next = (user.likedSongIds || []).filter((id) => String(id) !== String(song.id))
     const { data } = await api.patch(`/users/${user.id}`, { likedSongIds: next })
     updateUser(data)
     onLiked && onLiked(song.id)
@@ -45,7 +49,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
       if (!Array.isArray(data) || data.length === 0) {
         await api.post('/songs', song)
       }
-    } catch {}
+    } catch { }
   }
 
   const addToPlaylist = async () => {
@@ -66,8 +70,8 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked }) {
       </div>
 
       <div className="songcard-actions">
-        <button 
-          onClick={togglePlay} 
+        <button
+          onClick={togglePlay}
           className="songcard-playbtn"
           title={playingThis ? 'Pause' : 'Play'}
         >

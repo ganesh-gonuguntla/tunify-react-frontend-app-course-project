@@ -19,7 +19,7 @@ export default function CategoryPage() {
           const online = await fetchSongsByCategoryFromInternet(slug)
           setSongs(online)
           return
-        } catch {}
+        } catch { }
       }
       const res = await api.get(`/songs?category=${slug}`)
       setSongs(res.data)
@@ -30,7 +30,7 @@ export default function CategoryPage() {
   const startShuffle = () => {
     const newShuffleState = !shuffle
     setShuffle(newShuffleState)
-    
+
     // Create shuffled array if enabling shuffle
     if (newShuffleState) {
       const shuffled = [...songs].sort(() => Math.random() - 0.5)
@@ -82,8 +82,8 @@ export default function CategoryPage() {
       </div>
 
       <div className="category-songs">
-        {songs.map(song => (
-          <SongCard key={song.id} song={song} />
+        {songs.map((song, index) => (
+          <SongCard key={song.id} song={song} contextQueue={songs} index={index} />
         ))}
       </div>
     </main>

@@ -131,8 +131,8 @@ export default function BrowsePage() {
       )}
 
       <div className="category-songs">
-        {songs.map((song) => (
-          <SongCard key={song.id} song={song} />
+        {songs.map((song, index) => (
+          <SongCard key={song.id} song={song} contextQueue={songs} index={index} />
         ))}
       </div>
     </main>

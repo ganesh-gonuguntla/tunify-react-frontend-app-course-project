@@ -39,8 +39,8 @@ export default function LikedSongsPage() {
         <div className="liked-empty">You don't have any liked songs yet.</div>
       ) : (
         <div className="liked-list">
-          {likedSongs.map((s) => (
-            <SongCard key={s.id} song={s} />
+          {likedSongs.map((s, index) => (
+            <SongCard key={s.id} song={s} contextQueue={likedSongs} index={index} />
           ))}
         </div>
       )}

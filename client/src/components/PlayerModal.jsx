@@ -18,6 +18,8 @@ export default function PlayerModal() {
     loop,
     setLoop,
     closePlayer,
+    currentIndex,
+    shuffle,
   } = usePlayer()
 
   // Don't show modal if no song is loaded
@@ -59,7 +61,7 @@ export default function PlayerModal() {
             </div>
           </div>
           {/* close button */}
-          <button className="player-close-btn" onClick={closePlayer}>✖</button>
+          <button className="player-close-btn" onClick={closePlayer}><h5>X</h5></button>
 
           {/* Progress Bar */}
           <div className="player-progress-section">
@@ -88,7 +90,7 @@ export default function PlayerModal() {
             >
               🔁
             </button>
-            <button onClick={prev} className="player-control-btn" disabled={queue.length <= 1}>
+            <button onClick={prev} className="player-control-btn" disabled={queue.length <= 1 || currentIndex === 0}>
               ⏮
             </button>
             <button
@@ -97,7 +99,11 @@ export default function PlayerModal() {
             >
               {isPlaying ? '⏸' : '▶'}
             </button>
-            <button onClick={next} className="player-control-btn" disabled={queue.length <= 1}>
+            <button
+              onClick={next}
+              className="player-control-btn"
+              disabled={queue.length <= 1 || (!shuffle && currentIndex === queue.length - 1)}
+            >
               ⏭
             </button>
             <div className="player-volume-control">

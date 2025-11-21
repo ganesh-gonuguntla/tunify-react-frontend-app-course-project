@@ -47,7 +47,7 @@ export const PlayerProvider = ({ children }) => {
         // log history
         if (user) {
           const entry = { songId: newSong.id, title: newSong.title, artist: newSong.artist, ts: Date.now() }
-          const history = Array.isArray(user.history) ? [...user.history, entry] : [entry]
+          const history = Array.isArray(user.history) ? [entry, ...user.history] : [entry]
           api
             .patch(`/users/${user.id}`, { history })
             .then((res) => updateUser(res.data))
@@ -110,7 +110,7 @@ export const PlayerProvider = ({ children }) => {
           // log history
           if (user) {
             const entry = { songId: current.id, title: current.title, artist: current.artist, ts: Date.now() }
-            const history = Array.isArray(user.history) ? [...user.history, entry] : [entry]
+            const history = Array.isArray(user.history) ? [entry, ...user.history] : [entry]
             api
               .patch(`/users/${user.id}`, { history })
               .then((res) => updateUser(res.data))
@@ -137,16 +137,19 @@ export const PlayerProvider = ({ children }) => {
     if (shuffle) {
       const rand = Math.floor(Math.random() * queue.length)
       setCurrentIndex(rand)
-    } else {
-      setCurrentIndex((i) => (i + 1) % queue.length)
+      setShouldPlay(true)
+    } else if (currentIndex < queue.length - 1) {
+      setCurrentIndex((i) => i + 1)
+      setShouldPlay(true)
     }
-    setShouldPlay(true)
   }
 
   const prev = () => {
     if (queue.length === 0) return
-    setCurrentIndex((i) => (i - 1 + queue.length) % queue.length)
-    setShouldPlay(true)
+    if (currentIndex > 0) {
+      setCurrentIndex((i) => i - 1)
+      setShouldPlay(true)
+    }
   }
 
   // Handle user logout - reset player
@@ -247,14 +250,14 @@ export const PlayerProvider = ({ children }) => {
   // player close button
 
   const closePlayer = () => {
-  const audio = audioRef.current
-  audio.pause()
-  audio.currentTime = 0
-  audio.src = ''
-  setIsPlaying(false)
-  setQueue([])
-  setCurrentIndex(-1)
-}
+    const audio = audioRef.current
+    audio.pause()
+    audio.currentTime = 0
+    audio.src = ''
+    setIsPlaying(false)
+    setQueue([])
+    setCurrentIndex(-1)
+  }
 
   const value = useMemo(
     () => ({
@@ -276,8 +279,9 @@ export const PlayerProvider = ({ children }) => {
       loop,
       setLoop,
       closePlayer,
+      currentIndex,
     }),
-    [current, isPlaying, queue, shuffle, currentTime, duration, volume, loop]
+    [current, isPlaying, queue, shuffle, currentTime, duration, volume, loop, currentIndex]
   )
 
   return <PlayerContext.Provider value={value}>{children}</PlayerContext.Provider>
