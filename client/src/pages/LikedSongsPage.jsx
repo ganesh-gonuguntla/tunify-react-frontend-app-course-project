@@ -3,6 +3,7 @@ import { useAuth } from '../state/AuthContext'
 import { api } from '../utils/api'
 import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
+import { motion } from 'framer-motion'
 import '../styles/modal.css'
 import '../styles/modal.css'   // ← Add this new CSS file
 
@@ -27,7 +28,13 @@ export default function LikedSongsPage() {
   if (!user) return null
 
   return (
-    <main className="liked-container">
+    <motion.main
+      className="liked-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="liked-header">
         <h1 className="liked-title">Liked Songs</h1>
         <div className="liked-count">
@@ -44,6 +51,6 @@ export default function LikedSongsPage() {
           ))}
         </div>
       )}
-    </main>
+    </motion.main>
   )
 }

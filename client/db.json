@@ -97,10 +97,144 @@
         "1594176032",
         "1747191476",
         1853854250,
-        1711337908
+        1711337908,
+        1772783961,
+        1176303886
       ],
       "playlists": [],
       "history": [
+        {
+          "songId": "1747191476",
+          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
+          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
+          "ts": 1764243817723
+        },
+        {
+          "songId": "1287875522",
+          "title": "Swing Zara (From \"Jai Lava Kusa\")",
+          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
+          "ts": 1764243814272
+        },
+        {
+          "songId": "1287875522",
+          "title": "Swing Zara (From \"Jai Lava Kusa\")",
+          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
+          "ts": 1764243808213
+        },
+        {
+          "songId": "1779232449",
+          "title": "Devara Thandavam (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander",
+          "ts": 1764243805987
+        },
+        {
+          "songId": "1768062609",
+          "title": "Red Sea (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander & Heisenberg",
+          "ts": 1764243801550
+        },
+        {
+          "songId": "1747191476",
+          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
+          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
+          "ts": 1764243798611
+        },
+        {
+          "songId": "1594176032",
+          "title": "Akhanda - Title Song (From \"Akhanda\")",
+          "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
+          "ts": 1764243794704
+        },
+        {
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764243758379
+        },
+        {
+          "songId": 1851988371,
+          "title": "Globetrotter (From \"Varanasi\")",
+          "artist": "M.M. Keeravani, Shruti Haasan, Kaala Bhairava & Chaitanya Prasad",
+          "ts": 1764241757027
+        },
+        {
+          "songId": 1711337908,
+          "title": "Ammayi (From \"Animal\")",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764240969014
+        },
+        {
+          "songId": "1851699262",
+          "title": "The Thaandavam Song Promo (From \"Akhanda 2 - Thaandavam\")",
+          "artist": "Thaman S., Shankar Mahadevan, Kailash Kher & Kalyan Chakravarthy",
+          "ts": 1764240947536
+        },
+        {
+          "songId": "1287875522",
+          "title": "Swing Zara (From \"Jai Lava Kusa\")",
+          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
+          "ts": 1764240918417
+        },
+        {
+          "songId": "158796836",
+          "title": "Pearls",
+          "artist": "Sade",
+          "ts": 1764240862044
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1764240859157
+        },
+        {
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1764240852045
+        },
+        {
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1764240846772
+        },
+        {
+          "songId": "1323177389",
+          "title": "Perfect Symphony",
+          "artist": "Ed Sheeran & Andrea Bocelli",
+          "ts": 1764240833394
+        },
+        {
+          "songId": 1440783625,
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "ts": 1764240664067
+        },
+        {
+          "songId": 1844369309,
+          "title": "Despacito (feat. FOLA)",
+          "artist": "Blaqbonez",
+          "ts": 1764240642844
+        },
+        {
+          "songId": 1447401626,
+          "title": "Despacito (feat. Justin Bieber) [Remix]",
+          "artist": "Luis Fonsi & Daddy Yankee",
+          "ts": 1764240611293
+        },
+        {
+          "songId": 1447401620,
+          "title": "Despacito",
+          "artist": "Luis Fonsi & Daddy Yankee",
+          "ts": 1764240579012
+        },
+        {
+          "songId": 1715103175,
+          "title": "Ammaadi (From \"Hi Nanna\")",
+          "artist": "Shakthisree Gopalan, Kaala Bhairava & Krishna Kanth",
+          "ts": 1764240531736
+        },
         {
           "songId": 1711337908,
           "title": "Ammayi (From \"Animal\")",
@@ -1130,6 +1264,14 @@
       "category": "ammayi",
       "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/dd/84/f2/dd84f29d-4fa7-19e6-3d1d-1e7545eaeb2a/mzaf_12859193853168412854.plus.aac.p.m4a",
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b7/db/4e/b7db4e5f-c5de-db2e-9d00-29891dcf328d/8903431967565_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1176303886,
+      "title": "After Dark",
+      "artist": "Mr.Kitty",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/23/3c/26233cdf-ae9e-a40e-3e5c-8645bac1dd00/mzaf_4554903182036177858.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/5d/c6/ce5dc65e-6dac-bb8a-daaf-72bf77d0ba75/616450974909.png/100x100bb.jpg"
     }
   ],
   "playlists": [

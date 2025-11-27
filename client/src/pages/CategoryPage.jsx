@@ -4,6 +4,7 @@ import { api } from '../utils/api'
 import { fetchSongsByCategoryFromInternet } from '../utils/musicApi'
 import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
+import { motion } from 'framer-motion'
 import '../styles/navbar.css'   // <-- NEW CSS FILE
 
 export default function CategoryPage() {
@@ -53,7 +54,13 @@ export default function CategoryPage() {
   }
 
   return (
-    <main className="category-page">
+    <motion.main
+      className="category-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="category-header">
         <h1 className="category-title">{slug}</h1>
 
@@ -86,6 +93,6 @@ export default function CategoryPage() {
           <SongCard key={song.id} song={song} contextQueue={songs} index={index} />
         ))}
       </div>
-    </main>
+    </motion.main>
   )
 }

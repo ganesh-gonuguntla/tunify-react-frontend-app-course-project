@@ -6,6 +6,7 @@ import SongCard from '../components/SongCard'
 import PlaylistCard from '../components/PlaylistCard'
 import PlaylistModal from '../components/PlaylistModal'
 import { usePlayer } from '../state/PlayerContext'
+import { motion } from 'framer-motion'
 import '../styles/profilePage.css'   // <-- Profile page styles
 
 export default function ProfilePage() {
@@ -129,7 +130,13 @@ export default function ProfilePage() {
   }
 
   return (
-    <main className="profile-page">
+    <motion.main
+      className="profile-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <h2 className="profile-title" style={{ marginBottom: '20px' }}>Hey, {user?.username} welcome to your section</h2>
 
       {/* ======== LIKED SONGS SECTION ======== */}
@@ -244,6 +251,6 @@ export default function ProfilePage() {
           }}
         />
       )}
-    </main>
+    </motion.main>
   )
 }

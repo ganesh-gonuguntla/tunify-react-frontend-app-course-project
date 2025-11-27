@@ -5,6 +5,8 @@ import { api } from '../utils/api'
 import AddToPlaylistModal from './AddToPlaylistModal'
 import "../styles/modal.css"   // ← ADD THIS
 
+import { motion } from 'framer-motion'
+
 export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueue, index }) {
   const { user, updateUser } = useAuth()
   const { current, isPlaying, playSongs, pause, play } = usePlayer()
@@ -61,7 +63,13 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
   }
 
   return (
-    <div className="songcard-container">
+    <motion.div
+      className="songcard-container"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2 }}
+      whileHover={{ scale: 1.02 }}
+    >
       <img src={song.coverUrl} alt="cover" className="songcard-cover" />
 
       <div className="songcard-info">
@@ -70,30 +78,36 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
       </div>
 
       <div className="songcard-actions">
-        <button
+        <motion.button
           onClick={togglePlay}
           className="songcard-playbtn"
           title={playingThis ? 'Pause' : 'Play'}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           {playingThis ? '⏸' : '▶'}
-        </button>
+        </motion.button>
 
-        <button
+        <motion.button
           onClick={isLiked ? unlike : like}
           className="songcard-iconbtn"
           title={isLiked ? 'Unlike' : 'Like'}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
         >
           {isLiked ? '❤️' : '🤍'}
-        </button>
+        </motion.button>
 
-        <button
+        <motion.button
           onClick={addToPlaylist}
           className="songcard-iconbtn"
           id="add-playlist"
           title="Add to playlist"
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
         >
           ➕
-        </button>
+        </motion.button>
       </div>
 
       {showPlaylistModal && (
@@ -107,7 +121,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
           }}
         />
       )}
-    </div>
+    </motion.div>
   )
 }
 

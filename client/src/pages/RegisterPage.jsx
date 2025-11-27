@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../state/AuthContext'
 import { api } from '../utils/api'
+import { motion } from 'framer-motion'
 import '../styles/login.css'
 
 export default function RegisterPage() {
@@ -115,7 +116,13 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="register-container">
+    <motion.div
+      className="register-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
 
       {/* LEFT image section */}
       <div className="register-left"></div>
@@ -192,6 +199,6 @@ export default function RegisterPage() {
         </form>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
