@@ -2,7 +2,7 @@
 .profile-page {
   width: 100%;
   min-height:90.6vh;
-  background: linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );
+  background: linear-gradient(135deg, #c8fbfa,#f579a2 );
   padding: 32px 20px;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,7 @@
   font-weight: 700;
   color: #2d004d;
   margin-bottom: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* EMPTY MESSAGE */
@@ -87,7 +88,7 @@
 
 /* PLAYLIST CARD */
 .playlist-card {
-  background: rgba(255,255,255,0.6);
+  background: linear-gradient(#f579a2, #c8fbfa);
   border: 1px solid #dcdcdc;
   border-radius: 10px;
   padding: 16px;

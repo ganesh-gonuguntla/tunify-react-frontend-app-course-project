@@ -130,11 +130,12 @@ export default function ProfilePage() {
 
   return (
     <main className="profile-page">
+      <h2 className="profile-title" style={{ marginBottom: '20px' }}>Hey, {user?.username} welcome to your section</h2>
 
       {/* ======== LIKED SONGS SECTION ======== */}
       <section className="profile-section">
         <div className="profile-section-header">
-          <h2 className="profile-title">Liked Songs ❤️</h2>
+          <h2 className="profile-title">Liked Songs</h2>
           <Link to="/liked" className="primary-btn profile-button">View liked songs</Link>
         </div>
       </section>
@@ -144,7 +145,7 @@ export default function ProfilePage() {
 
         {/* Header row: Playlist title + "New Playlist" button */}
         <div className="profile-section-header">
-          <h2 className="profile-title">Playlists ▶️</h2>
+          <h2 className="profile-title">Playlists</h2>
 
           <button className="primary-btn profile-button" onClick={createPlaylist}>
             New Playlist

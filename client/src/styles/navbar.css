@@ -1,7 +1,7 @@
 /* NAVBAR WRAPPER */
 .navbar {
   width: 100%;
-  background: linear-gradient(135deg, #000000, #2d004d, #6a0dad);
+  background: linear-gradient(135deg, #000000, #6a0dad);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #e5e5e5;
   position: sticky;
@@ -182,7 +182,7 @@
   max-width: 100%;        /* same as max-w-4xl */
   margin: 0 auto;
   padding: 24px 16px;  
-  background:  linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );    /* py-6 px-4 */
+  background:  linear-gradient(135deg, #b3fefd,#faa5c1);    /* py-6 px-4 */
   min-height: 90vh;
 }
 
@@ -252,7 +252,7 @@ text-transform: capitalize;
 .home-background {
   min-height: 90.6vh;
   width: 100%;
-  background: linear-gradient(135deg,#e1e4e8,#939ca3, #71706C );
+  background: linear-gradient(135deg, #c8fbfa,#fdacc7);
   
 }
 

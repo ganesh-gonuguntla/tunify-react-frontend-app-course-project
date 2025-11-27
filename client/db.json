@@ -93,10 +93,128 @@
         "1161504043",
         "1323177389",
         "1443430411",
-        1851699262
+        1851699262,
+        "1594176032",
+        "1747191476",
+        1853854250,
+        1711337908
       ],
       "playlists": [],
       "history": [
+        {
+          "songId": 1711337908,
+          "title": "Ammayi (From \"Animal\")",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764240065176
+        },
+        {
+          "songId": 1711337908,
+          "title": "Ammayi (From \"Animal\")",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764240035000
+        },
+        {
+          "songId": 1711337908,
+          "title": "Ammayi (From \"Animal\")",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764240024412
+        },
+        {
+          "songId": 1718283747,
+          "title": "Ammayi",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764239858018
+        },
+        {
+          "songId": 1727142813,
+          "title": "Ammayi",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764239827027
+        },
+        {
+          "songId": 1711337908,
+          "title": "Ammayi (From \"Animal\")",
+          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+          "ts": 1764239796637
+        },
+        {
+          "songId": 1853854250,
+          "title": "Jajikaya Jajikaya (From \"Akhanda 2 - Thaandavam\")",
+          "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
+          "ts": 1764239743800
+        },
+        {
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1763977795728
+        },
+        {
+          "songId": "1779232449",
+          "title": "Devara Thandavam (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander",
+          "ts": 1763977773088
+        },
+        {
+          "songId": "1287875522",
+          "title": "Swing Zara (From \"Jai Lava Kusa\")",
+          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
+          "ts": 1763977766647
+        },
+        {
+          "songId": "1747191476",
+          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
+          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
+          "ts": 1763977759339
+        },
+        {
+          "songId": "1747191476",
+          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
+          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
+          "ts": 1763977735363
+        },
+        {
+          "songId": 1853340933,
+          "title": "The Rise of Ojas Gambheera",
+          "artist": "Thaman S.",
+          "ts": 1763977650387
+        },
+        {
+          "songId": "1287875522",
+          "title": "Swing Zara (From \"Jai Lava Kusa\")",
+          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
+          "ts": 1763973804539
+        },
+        {
+          "songId": "1779232449",
+          "title": "Devara Thandavam (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander",
+          "ts": 1763973803670
+        },
+        {
+          "songId": "1768062609",
+          "title": "Red Sea (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander & Heisenberg",
+          "ts": 1763973802820
+        },
+        {
+          "songId": "1747191476",
+          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
+          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
+          "ts": 1763973801259
+        },
+        {
+          "songId": "1594176032",
+          "title": "Akhanda - Title Song (From \"Akhanda\")",
+          "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
+          "ts": 1763973797724
+        },
+        {
+          "songId": "1594176032",
+          "title": "Akhanda - Title Song (From \"Akhanda\")",
+          "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
+          "ts": 1763973783517
+        },
         {
           "songId": 1851699262,
           "title": "The Thaandavam Song Promo (From \"Akhanda 2 - Thaandavam\")",
@@ -433,6 +551,92 @@
       ],
       "playlists": [],
       "history": []
+    },
+    {
+      "id": "5e97",
+      "username": "kalyan",
+      "likedSongIds": [],
+      "playlists": [],
+      "history": [
+        {
+          "songId": 1711849667,
+          "title": "Happier",
+          "artist": "Marshmello & Bastille",
+          "ts": 1764237897066
+        },
+        {
+          "songId": 303178994,
+          "title": "Pop",
+          "artist": "*NSYNC",
+          "ts": 1764237894372
+        },
+        {
+          "songId": 1536646948,
+          "title": "Too Good at Goodbyes",
+          "artist": "Sam Smith",
+          "ts": 1764237892754
+        },
+        {
+          "songId": 1147252591,
+          "title": "Say You Won't Let Go",
+          "artist": "James Arthur",
+          "ts": 1764237890989
+        },
+        {
+          "songId": 1508562516,
+          "title": "Heat Waves",
+          "artist": "Glass Animals",
+          "ts": 1764237889884
+        },
+        {
+          "songId": 1475930045,
+          "title": "Dance Monkey",
+          "artist": "Tones And I",
+          "ts": 1764237886890
+        },
+        {
+          "songId": 1508562516,
+          "title": "Heat Waves",
+          "artist": "Glass Animals",
+          "ts": 1764237885258
+        },
+        {
+          "songId": 1475930045,
+          "title": "Dance Monkey",
+          "artist": "Tones And I",
+          "ts": 1764237884287
+        },
+        {
+          "songId": 257524515,
+          "title": "Let Me Love You",
+          "artist": "Mario",
+          "ts": 1764237882606
+        },
+        {
+          "songId": 1615585008,
+          "title": "As It Was",
+          "artist": "Harry Styles",
+          "ts": 1764237876433
+        },
+        {
+          "songId": 1369380479,
+          "title": "lovely",
+          "artist": "Billie Eilish & Khalid",
+          "ts": 1764237875369
+        },
+        {
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1764237872950
+        },
+        {
+          "songId": 1624932774,
+          "title": "POP!",
+          "artist": "NAYEON",
+          "ts": 1764237864232
+        }
+      ]
     }
   ],
   "categories": [
@@ -880,12 +1084,52 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/43/25/0043258a-e61b-f29d-d9d5-9cbdb3271e64/8903431019714_cover.jpg/100x100bb.jpg"
     },
     {
-      "id": 1287875522,
+      "id": "1287875522",
       "title": "Swing Zara (From \"Jai Lava Kusa\")",
       "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
       "category": "swing zara",
       "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/15/bb/cc/15bbcc91-bb46-3cac-b4ba-f6921a7c92be/mzaf_5150298019712765724.plus.aac.p.m4a",
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/65/5b/1e655bc3-425e-7a5e-460f-2714c1d51841/8903431653543_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1615585008,
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/3e/35/5c3e3567-cb65-696e-ac12-1b6a70338fb4/mzaf_16996107027988577832.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1762656732,
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/d1/46/e9d14699-9505-493e-cd27-a501095c81ff/mzaf_7283388936457278756.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 900672609,
+      "title": "Take Me to Church",
+      "artist": "Hozier",
+      "category": "rock",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/68/30/8b/68308b2f-e7e3-6e86-7897-b59c4097e87d/mzaf_6740432925401067877.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1853854250,
+      "title": "Jajikaya Jajikaya (From \"Akhanda 2 - Thaandavam\")",
+      "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
+      "category": "jajikaya",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4b/05/264b05e3-4790-395b-2410-45f278cb7a9d/mzaf_406625451002781955.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/15/35/fc/1535fc41-1d17-e8fc-e005-c1e6c6c0742a/cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1711337908,
+      "title": "Ammayi (From \"Animal\")",
+      "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
+      "category": "ammayi",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/dd/84/f2/dd84f29d-4fa7-19e6-3d1d-1e7545eaeb2a/mzaf_12859193853168412854.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b7/db/4e/b7db4e5f-c5de-db2e-9d00-29891dcf328d/8903431967565_cover.jpg/100x100bb.jpg"
     }
   ],
   "playlists": [
@@ -960,6 +1204,16 @@
         1779232449,
         1287875522
       ]
+    },
+    {
+      "id": "dfb4",
+      "userId": "5e97",
+      "name": "kalyan",
+      "songIds": [
+        1590036021,
+        1615585008,
+        1762656732
+      ]
     }
   ],
   "authUsers": [
@@ -1012,6 +1266,11 @@
       "id": "7164",
       "username": "the_sketchist",
       "password": "Ganesh@#2006"
+    },
+    {
+      "id": "5b76",
+      "username": "kalyan",
+      "password": "Topper@1"
     }
   ]
 }
