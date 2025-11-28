@@ -383,11 +383,12 @@
   padding: 12px;
  box-shadow: 7px 7px 5px #888888;
   border-radius: 8px;
+  cursor: pointer;
   background:linear-gradient(135deg, #000000, #2d004d, #6a0dad);
 }
 
 .songcard-container:hover{
-  transform: scale(1.007);
+  /* transform: scale(1.001); */
   background: #2d004d;
   border: 1px solid snow; 
 }

@@ -3,7 +3,7 @@ import { useAuth } from '../state/AuthContext'
 import { usePlayer } from '../state/PlayerContext'
 import { api } from '../utils/api'
 import AddToPlaylistModal from './AddToPlaylistModal'
-import "../styles/modal.css"   // ← ADD THIS
+// import "../styles/modal.css"   // ← ADD THIS
 
 import { motion } from 'framer-motion'
 
@@ -64,33 +64,37 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
 
   return (
     <motion.div
-      className="songcard-container"
+      className="flex items-center gap-[12px] w-full p-[12-x] shadow-[7px_7px_5px_#888888] rounded-[8px] cursor-pointer bg-gradient-to-br from-[#000001] via-[#2d004d] to-[#6a0dad]
+ hover:bg-[#2d004d] hover:border hover:border-[snow]"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.007 }}
+      onClick={togglePlay}
+      title={playingThis ? 'Pause' : 'Play'}
+     
     >
-      <img src={song.coverUrl} alt="cover" className="songcard-cover" />
+      <img src={song.coverUrl} alt="cover" className="ml-[10px] w-[64px] h-[60px] py-[3px] rounded-[8px] object-cover" />
 
-      <div className="songcard-info">
-        <div className="songcard-title">{song.title}</div>
-        <div className="songcard-artist">{song.artist}</div>
+      <div className="flex-1">
+        <div className="font-semibold text-white">{song.title}</div>
+        <div className="text-sm text-[#9ca3af]">{song.artist}</div>
       </div>
 
-      <div className="songcard-actions">
-        <motion.button
+      <div className="flex items-center gap-[20px]">
+        {/* <motion.button
           onClick={togglePlay}
           className="songcard-playbtn"
-          title={playingThis ? 'Pause' : 'Play'}
+          
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           {playingThis ? '⏸' : '▶'}
-        </motion.button>
+        </motion.button> */}
 
         <motion.button
           onClick={isLiked ? unlike : like}
-          className="songcard-iconbtn"
+          className="text-white text-lg cursor-pointer bg-white rounded-[10%] p-0 border-[3px] border-white hover:opacity-75"
           title={isLiked ? 'Unlike' : 'Like'}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -100,7 +104,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
 
         <motion.button
           onClick={addToPlaylist}
-          className="songcard-iconbtn"
+          className="text-white mr-[10px] text-lg cursor-pointer bg-white rounded-[10%] p-0 border-[3px] border-white hover:opacity-75"
           id="add-playlist"
           title="Add to playlist"
           whileHover={{ scale: 1.2 }}

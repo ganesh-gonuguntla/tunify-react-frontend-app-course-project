@@ -104,388 +104,172 @@
       "playlists": [],
       "history": [
         {
-          "songId": "1747191476",
-          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
-          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
-          "ts": 1764243817723
+          "songId": 1361152140,
+          "title": "Hey Look Ma, I Made It",
+          "artist": "Panic! At the Disco",
+          "ts": 1764357730418
         },
         {
-          "songId": "1287875522",
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1764243814272
+          "songId": 1440848810,
+          "title": "Fade into You",
+          "artist": "Mazzy Star",
+          "ts": 1764357716026
         },
         {
-          "songId": "1287875522",
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1764243808213
+          "songId": 1358462132,
+          "title": "Jingle Bell Rock",
+          "artist": "Bobby Helms",
+          "ts": 1764357665080
         },
         {
-          "songId": "1779232449",
-          "title": "Devara Thandavam (From \"Devara Part 1\")",
-          "artist": "Anirudh Ravichander",
-          "ts": 1764243805987
-        },
-        {
-          "songId": "1768062609",
-          "title": "Red Sea (From \"Devara Part 1\")",
-          "artist": "Anirudh Ravichander & Heisenberg",
-          "ts": 1764243801550
-        },
-        {
-          "songId": "1747191476",
-          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
-          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
-          "ts": 1764243798611
-        },
-        {
-          "songId": "1594176032",
-          "title": "Akhanda - Title Song (From \"Akhanda\")",
-          "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
-          "ts": 1764243794704
+          "songId": 1440848810,
+          "title": "Fade into You",
+          "artist": "Mazzy Star",
+          "ts": 1764357649134
         },
         {
           "songId": 1772783961,
           "title": "Rock",
           "artist": "Stepz",
-          "ts": 1764243758379
+          "ts": 1764357597829
         },
         {
-          "songId": 1851988371,
-          "title": "Globetrotter (From \"Varanasi\")",
-          "artist": "M.M. Keeravani, Shruti Haasan, Kaala Bhairava & Chaitanya Prasad",
-          "ts": 1764241757027
-        },
-        {
-          "songId": 1711337908,
-          "title": "Ammayi (From \"Animal\")",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764240969014
-        },
-        {
-          "songId": "1851699262",
-          "title": "The Thaandavam Song Promo (From \"Akhanda 2 - Thaandavam\")",
-          "artist": "Thaman S., Shankar Mahadevan, Kailash Kher & Kalyan Chakravarthy",
-          "ts": 1764240947536
-        },
-        {
-          "songId": "1287875522",
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1764240918417
-        },
-        {
-          "songId": "158796836",
-          "title": "Pearls",
-          "artist": "Sade",
-          "ts": 1764240862044
-        },
-        {
-          "songId": "1593911544",
-          "title": "911",
-          "artist": "Teddy Swims",
-          "ts": 1764240859157
-        },
-        {
-          "songId": "1161504043",
-          "title": "That's What I Like",
-          "artist": "Bruno Mars",
-          "ts": 1764240852045
-        },
-        {
-          "songId": "1593911544",
-          "title": "911",
-          "artist": "Teddy Swims",
-          "ts": 1764240846772
-        },
-        {
-          "songId": "1323177389",
-          "title": "Perfect Symphony",
-          "artist": "Ed Sheeran & Andrea Bocelli",
-          "ts": 1764240833394
-        },
-        {
-          "songId": 1440783625,
-          "title": "Smells Like Teen Spirit",
-          "artist": "Nirvana",
-          "ts": 1764240664067
-        },
-        {
-          "songId": 1844369309,
-          "title": "Despacito (feat. FOLA)",
-          "artist": "Blaqbonez",
-          "ts": 1764240642844
-        },
-        {
-          "songId": 1447401626,
-          "title": "Despacito (feat. Justin Bieber) [Remix]",
-          "artist": "Luis Fonsi & Daddy Yankee",
-          "ts": 1764240611293
-        },
-        {
-          "songId": 1447401620,
-          "title": "Despacito",
-          "artist": "Luis Fonsi & Daddy Yankee",
-          "ts": 1764240579012
-        },
-        {
-          "songId": 1715103175,
-          "title": "Ammaadi (From \"Hi Nanna\")",
-          "artist": "Shakthisree Gopalan, Kaala Bhairava & Krishna Kanth",
-          "ts": 1764240531736
-        },
-        {
-          "songId": 1711337908,
-          "title": "Ammayi (From \"Animal\")",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764240065176
-        },
-        {
-          "songId": 1711337908,
-          "title": "Ammayi (From \"Animal\")",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764240035000
-        },
-        {
-          "songId": 1711337908,
-          "title": "Ammayi (From \"Animal\")",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764240024412
-        },
-        {
-          "songId": 1718283747,
-          "title": "Ammayi",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764239858018
-        },
-        {
-          "songId": 1727142813,
-          "title": "Ammayi",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764239827027
-        },
-        {
-          "songId": 1711337908,
-          "title": "Ammayi (From \"Animal\")",
-          "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
-          "ts": 1764239796637
-        },
-        {
-          "songId": 1853854250,
-          "title": "Jajikaya Jajikaya (From \"Akhanda 2 - Thaandavam\")",
-          "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
-          "ts": 1764239743800
-        },
-        {
-          "songId": "1161504043",
-          "title": "That's What I Like",
-          "artist": "Bruno Mars",
-          "ts": 1763977795728
-        },
-        {
-          "songId": "1779232449",
-          "title": "Devara Thandavam (From \"Devara Part 1\")",
-          "artist": "Anirudh Ravichander",
-          "ts": 1763977773088
-        },
-        {
-          "songId": "1287875522",
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1763977766647
-        },
-        {
-          "songId": "1747191476",
-          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
-          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
-          "ts": 1763977759339
-        },
-        {
-          "songId": "1747191476",
-          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
-          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
-          "ts": 1763977735363
-        },
-        {
-          "songId": 1853340933,
-          "title": "The Rise of Ojas Gambheera",
-          "artist": "Thaman S.",
-          "ts": 1763977650387
-        },
-        {
-          "songId": "1287875522",
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1763973804539
-        },
-        {
-          "songId": "1779232449",
-          "title": "Devara Thandavam (From \"Devara Part 1\")",
-          "artist": "Anirudh Ravichander",
-          "ts": 1763973803670
-        },
-        {
-          "songId": "1768062609",
-          "title": "Red Sea (From \"Devara Part 1\")",
-          "artist": "Anirudh Ravichander & Heisenberg",
-          "ts": 1763973802820
-        },
-        {
-          "songId": "1747191476",
-          "title": "Fear Song (From \"Devara Part 1\") - TELUGU",
-          "artist": "Anirudh Ravichander & Ramajogayya Sastry",
-          "ts": 1763973801259
+          "songId": 1762465921,
+          "title": "Ho Hey",
+          "artist": "The Lumineers",
+          "ts": 1764357118162
         },
         {
           "songId": "1594176032",
           "title": "Akhanda - Title Song (From \"Akhanda\")",
           "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
-          "ts": 1763973797724
+          "ts": 1764356497406
         },
         {
-          "songId": "1594176032",
-          "title": "Akhanda - Title Song (From \"Akhanda\")",
-          "artist": "Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S.",
-          "ts": 1763973783517
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1764356494757
         },
         {
-          "songId": 1851699262,
-          "title": "The Thaandavam Song Promo (From \"Akhanda 2 - Thaandavam\")",
-          "artist": "Thaman S., Shankar Mahadevan, Kailash Kher & Kalyan Chakravarthy",
-          "ts": 1763633377613
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764356487884
         },
         {
-          "songId": 1287875522,
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1763633792330
+          "songId": 1440848810,
+          "title": "Fade into You",
+          "artist": "Mazzy Star",
+          "ts": 1764356456339
         },
         {
-          "songId": 1845049679,
-          "title": "Swing Zara (From \"Jai Lava Kusa\") (From \"Swing Zara (From \"Jai Lava Kusa\")\")",
-          "artist": "Neha Bhasin & Dsp",
-          "ts": 1763633805586
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764356429721
         },
         {
-          "songId": 893085655,
-          "title": "Moani Ke ʻAla - Fragrant Breeze",
-          "artist": "Stephen Jones & Bryan Kessler",
-          "ts": 1763634153505
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764356398981
         },
         {
-          "songId": 1287875522,
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1763634178176
+          "songId": "1593911544",
+          "title": "911",
+          "artist": "Teddy Swims",
+          "ts": 1764356383728
         },
         {
-          "songId": 1845049679,
-          "title": "Swing Zara (From \"Jai Lava Kusa\") (From \"Swing Zara (From \"Jai Lava Kusa\")\")",
-          "artist": "Neha Bhasin & Dsp",
-          "ts": 1763634320227
+          "songId": "1161504043",
+          "title": "That's What I Like",
+          "artist": "Bruno Mars",
+          "ts": 1764356378364
         },
         {
-          "songId": 1782763234,
-          "title": "Peelings (From \"Pushpa 2 The Rule\") - TELUGU",
-          "artist": "Shankarr Babu Kandukoori, Laxmi Dasa, Chandrabose & Siju Thuravoor",
-          "ts": 1763634335042
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764356164599
         },
         {
-          "songId": 1783624611,
-          "title": "Peelings - HINDI",
-          "artist": "Javed Ali & Madhubanti Bagchi",
-          "ts": 1763634350167
+          "songId": 947701036,
+          "title": "Scar Tissue",
+          "artist": "Red Hot Chili Peppers",
+          "ts": 1764356074859
         },
         {
-          "songId": 1717735180,
-          "title": "Peelings",
-          "artist": "Magdy Haddad",
-          "ts": 1763634423110
+          "songId": 1762465921,
+          "title": "Ho Hey",
+          "artist": "The Lumineers",
+          "ts": 1764354998028
         },
         {
-          "songId": 1440754487,
-          "title": "Somebody That I Used to Know (feat. Kimbra)",
-          "artist": "Gotye",
-          "ts": 1763634452203
+          "songId": 1772783961,
+          "title": "Rock",
+          "artist": "Stepz",
+          "ts": 1764354992511
         },
         {
-          "songId": 993976750,
-          "title": "Jazz (Sexual Guitar)",
-          "artist": "Alicia Nando",
-          "ts": 1763634465292
+          "songId": "1590036021",
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1764262160646
         },
         {
-          "songId": 1612321591,
-          "title": "Bones",
-          "artist": "Imagine Dragons",
-          "ts": 1763634480740
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1764252349036
         },
         {
-          "songId": 1122782283,
-          "title": "Yellow",
-          "artist": "Coldplay",
-          "ts": 1763634762088
+          "songId": 1615585008,
+          "title": "As It Was",
+          "artist": "Harry Styles",
+          "ts": 1764252329163
         },
         {
-          "songId": 1122782283,
-          "title": "Yellow",
-          "artist": "Coldplay",
-          "ts": 1763635067176
+          "songId": 1369380479,
+          "title": "lovely",
+          "artist": "Billie Eilish & Khalid",
+          "ts": 1764252327897
         },
         {
-          "songId": 1711849667,
-          "title": "Happier",
-          "artist": "Marshmello & Bastille",
-          "ts": 1763636065172
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1764252326315
         },
         {
-          "songId": 1122782283,
-          "title": "Yellow",
-          "artist": "Coldplay",
-          "ts": 1763636071659
+          "songId": 1624932774,
+          "title": "POP!",
+          "artist": "NAYEON",
+          "ts": 1764252321669
         },
         {
-          "songId": 1711849667,
-          "title": "Happier",
-          "artist": "Marshmello & Bastille",
-          "ts": 1763697703915
+          "songId": 1624932774,
+          "title": "POP!",
+          "artist": "NAYEON",
+          "ts": 1764251995742
         },
         {
-          "songId": 1440872309,
-          "title": "I Feel It Coming (feat. Daft Punk)",
-          "artist": "The Weeknd",
-          "ts": 1763697714390
+          "songId": 1624932774,
+          "title": "POP!",
+          "artist": "NAYEON",
+          "ts": 1764251986565
         },
         {
-          "songId": 1536646948,
-          "title": "Too Good at Goodbyes",
-          "artist": "Sam Smith",
-          "ts": 1763704795321
+          "songId": 1590036021,
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "ts": 1764251913412
         },
         {
-          "songId": 1536646948,
-          "title": "Too Good at Goodbyes",
-          "artist": "Sam Smith",
-          "ts": 1763704810554
-        },
-        {
-          "songId": 1193701400,
-          "title": "Perfect",
-          "artist": "Ed Sheeran",
-          "ts": 1763704824394
-        },
-        {
-          "songId": 1450695872,
-          "title": "when the party's over",
-          "artist": "Billie Eilish",
-          "ts": 1763704830306
-        },
-        {
-          "songId": 1287875522,
-          "title": "Swing Zara (From \"Jai Lava Kusa\")",
-          "artist": "Neha Bhasin, Dsp & Ramajogayya Sastry",
-          "ts": 1763706759471
+          "songId": 1624932774,
+          "title": "POP!",
+          "artist": "NAYEON",
+          "ts": 1764251883074
         }
       ]
     },
@@ -1226,7 +1010,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/65/5b/1e655bc3-425e-7a5e-460f-2714c1d51841/8903431653543_cover.jpg/100x100bb.jpg"
     },
     {
-      "id": 1615585008,
+      "id": "1615585008",
       "title": "As It Was",
       "artist": "Harry Styles",
       "category": "pop",
@@ -1234,7 +1018,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/100x100bb.jpg"
     },
     {
-      "id": 1762656732,
+      "id": "1762656732",
       "title": "Die With A Smile",
       "artist": "Lady Gaga & Bruno Mars",
       "category": "pop",
@@ -1242,7 +1026,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/100x100bb.jpg"
     },
     {
-      "id": 900672609,
+      "id": "900672609",
       "title": "Take Me to Church",
       "artist": "Hozier",
       "category": "rock",
@@ -1250,7 +1034,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/1b/f1/5e1bf1de-e5f1-e73e-0752-e7882b4f2d57/886444718820.jpg/100x100bb.jpg"
     },
     {
-      "id": 1853854250,
+      "id": "1853854250",
       "title": "Jajikaya Jajikaya (From \"Akhanda 2 - Thaandavam\")",
       "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
       "category": "jajikaya",
@@ -1258,7 +1042,7 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/15/35/fc/1535fc41-1d17-e8fc-e005-c1e6c6c0742a/cover.jpg/100x100bb.jpg"
     },
     {
-      "id": 1711337908,
+      "id": "1711337908",
       "title": "Ammayi (From \"Animal\")",
       "artist": "Raghav Chaitanya, Anantha Sriram & Pritam",
       "category": "ammayi",
@@ -1266,12 +1050,20 @@
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b7/db/4e/b7db4e5f-c5de-db2e-9d00-29891dcf328d/8903431967565_cover.jpg/100x100bb.jpg"
     },
     {
-      "id": 1176303886,
+      "id": "1176303886",
       "title": "After Dark",
       "artist": "Mr.Kitty",
       "category": "rock",
       "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/23/3c/26233cdf-ae9e-a40e-3e5c-8645bac1dd00/mzaf_4554903182036177858.plus.aac.p.m4a",
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/5d/c6/ce5dc65e-6dac-bb8a-daaf-72bf77d0ba75/616450974909.png/100x100bb.jpg"
+    },
+    {
+      "id": "1624932774",
+      "title": "POP!",
+      "artist": "NAYEON",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/e3/cc/78e3ccf4-319a-e7fa-31a9-78a340ef116e/mzaf_16860350407075690894.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3f/49/ec/3f49ecb2-cb91-dd28-45b9-a31326d7e63b/738676859614_Cover.jpg/100x100bb.jpg"
     }
   ],
   "playlists": [
