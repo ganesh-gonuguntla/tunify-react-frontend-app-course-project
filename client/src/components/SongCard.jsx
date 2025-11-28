@@ -70,7 +70,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
       whileHover={{ scale: 1.007 }}
-      onClick={togglePlay}
+      // onClick={togglePlay}
       title={playingThis ? 'Pause' : 'Play'}
      
     >
@@ -82,7 +82,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
       </div>
 
       <div className="flex items-center gap-[20px]">
-        {/* <motion.button
+         <motion.button
           onClick={togglePlay}
           className="songcard-playbtn"
           
@@ -90,7 +90,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
           whileTap={{ scale: 0.9 }}
         >
           {playingThis ? '⏸' : '▶'}
-        </motion.button> */}
+        </motion.button> 
 
         <motion.button
           onClick={isLiked ? unlike : like}

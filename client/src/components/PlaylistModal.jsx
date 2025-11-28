@@ -113,33 +113,33 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
   }
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content playlist-modal" onClick={(e) => e.stopPropagation()}>
-        <div className="modal-header">
-          <h2>{playlist.name}</h2>
-          <button className="modal-close" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-[1000] rounded-[20px]" onClick={onClose}>
+      <div className=" rounded-[12px] bg-[#fcfcfc] rounded-[12px] max-w-[600px] w-[90%] max-h-[90vh] flex flex-col shadow-[0_10px_40px_rgba(0,0,0,0.3)] animate-[slideUp_0.3s_ease-out]" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between p-[20px] border-b- border-[#e5e5e5] bg-[#6a0dad]">
+          <h2 className="text-white ">{playlist.name}</h2>
+          <button className="bg-transparent border-none text-[32px] text-[#999] cursor-pointer p-0 w-[40px] h-[40px] flex items-center justify-center transition duration-200 hover:text-[#2d004d] hover:scale-125" onClick={onClose}>
             ×
           </button>
         </div>
 
-        <div className="modal-body playlist-body">
+        <div className="flex-1 overflow-y-auto p-5 max-h-[60vh]">
           {playlistSongs.length === 0 ? (
-            <div className="empty-state">No songs in this playlist yet.</div>
+            <div className="text-center p-[40px_20px] text-[#999] text-[16px]">No songs in this playlist yet.</div>
           ) : (
-            <div className="playlist-songs-list">
+            <div className="flex flex-col gap-[12px] ">
               {playlistSongs.map((song) => {
                 const playingThis = current?.id === song.id && isPlaying
                 const isLiked = (user?.likedSongIds || []).map(String).includes(String(song.id))
                 return (
-                  <div key={song.id} className="playlist-song-item">
-                    <div className="song-info">
-                      <img src={song.coverUrl} alt={song.title} className="song-thumb" />
-                      <div className="song-details">
-                        <div className="song-title">{song.title}</div>
-                        <div className="song-artist">{song.artist}</div>
+                  <div key={song.id} className="flex items-center justify-between p-[12px] bg-[#f9f9f9] rounded-[8px] border border-[#eee] transition hover:bg-[#f0e6ff]">
+                    <div className="flex items-center gap-[12px] flex-1">
+                      <img src={song.coverUrl} alt={song.title} className="w-[50px] h-[50px] rounded-[6px] object-cover" />
+                      <div className="flex-1">
+                        <div className="font-semibold text-[14px] text-[#2d004d]">{song.title}</div>
+                        <div className="text-[12px] text-[#999] mt-[2px]">{song.artist}</div>
                       </div>
                     </div>
-                    <div className="song-actions">
+                    <div className="flex items-center gap-[8px]">
                       <button
                         className="btn btn-sm btn-action"
                         onClick={() => togglePlay(song)}
@@ -176,7 +176,7 @@ export default function PlaylistModal({ playlist, songs, user, onClose, onPlayli
           )}
         </div>
 
-        <div className="modal-footer">
+        <div className="flex gap-[10px] p-[16px_20px] border-t border-[#e5e5e5] bg-[linear-gradient(135deg,#f5f5f5,#efefef)] justify-end">
           <button className="btn btn-secondary rename" onClick={() => renamePlaylist()} disabled={loading}>
             Rename
           </button>

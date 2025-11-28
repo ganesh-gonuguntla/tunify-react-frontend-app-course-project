@@ -29,23 +29,23 @@ export default function LikedSongsPage() {
 
   return (
     <motion.main
-      className="liked-container"
+      className="min-w-full min-h-[150vh] mx-auto p-[24px] bg-[#f8d2deff]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="liked-header">
-        <h1 className="liked-title">Liked Songs</h1>
-        <div className="liked-count">
+      <div className="flex items-center justify-between mb-[18px]">
+        <h1 className="mt-[12px] text-[40px] text-[40px] font-[Raleway,sans-serif] mb-[10px] ml-0">Liked Songs</h1>
+        <div className="text-[20px] font-bold">
           {likedSongs.length} song{likedSongs.length !== 1 ? 's' : ''}
-        </div>
+        </div> 
       </div>
 
       {likedSongs.length === 0 ? (
-        <div className="liked-empty">You don't have any liked songs yet.</div>
+        <div className="text-[#9ca3af] text-[15px]">You don't have any liked songs yet.</div>
       ) : (
-        <div className="liked-list">
+        <div className="flex flex-col gap-[12px] min-h-[100px]">
           {likedSongs.map((s, index) => (
             <SongCard key={s.id} song={s} contextQueue={likedSongs} index={index} />
           ))}
