@@ -4,8 +4,7 @@ import { api } from '../utils/api'
 import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
 import { motion } from 'framer-motion'
-import '../styles/modal.css'
-import '../styles/modal.css'   // ← Add this new CSS file
+
 
 export default function LikedSongsPage() {
   const { user } = useAuth()

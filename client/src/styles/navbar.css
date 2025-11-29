@@ -1,5 +1,5 @@
 /* NAVBAR WRAPPER */
-.navbar {
+/* .navbar {
   width: 100%;
   background: linear-gradient(135deg, #000000, #6a0dad);
   backdrop-filter: blur(10px);
@@ -8,9 +8,9 @@
   top: 0;
   z-index: 20;
 }
-
+ */
 /* INNER FLEX CONTAINER */
-.navbar-container {
+/* .navbar-container {
   max-width: 1200px;
   margin-right: 5%;
   padding: 12px 16px;
@@ -19,9 +19,9 @@
   align-items: center;
   justify-content: space-between;
 }
-
+ */
 /* LOGO (Left-most) */
-.navbar-logo {
+/* .navbar-logo {
   font-size: 40px;
   font-weight: bold;
   color: snow;
@@ -36,34 +36,34 @@
 .logo-music-icon:hover {
   transform: rotate(360deg);
   transition: transform 0.8s ease;
-}
+} */
 
 
 /* RIGHT SECTION: username + logout */
-.navbar-right {
+/* .navbar-right {
   display: flex;
   align-items: center;
-  gap: 30px; /* spacing between username and logout button */
+  gap: 30px; 
   margin-left: 0;
-}
+} */
 
 /* Username */
-.navbar-username {
+/* .navbar-username {
   font-size: 20px;
   color: snow;
   text-decoration: none;
   font-weight: 500;
   transition: 0.2s;
 
-}
+} */
 
-.navbar-username:hover {
+/* .navbar-username:hover {
   text-decoration: underline;
   transform: scale(1.03);  
-}
+} */
 /* navbar home button */
 
-.navbar-home-btn
+/* .navbar-home-btn
 {
   font-size: 20px;
   color: snow;
@@ -75,10 +75,10 @@
 .navbar-home-btn:hover{
    text-decoration: underline;
    transform: scale(1.03);  
-}
+} */
 
 /* Logout Button (Right-most) */
-.logout-button {
+/* .logout-button {
   padding: 6px 14px;
   border: none;
   border-radius: 6px;
@@ -92,7 +92,7 @@
 .logout-button:hover {
   background: #7a7474;
   transform: scale(1.03);  
-}
+} */
 
 
 /* MAIN CARD */
