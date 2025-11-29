@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* Logout Button */}
           <motion.button
             onClick={logout}
-            className="px-[14px] py-[6px] rounded-[6px]  text-[#2d004d] font-bold transition hover:bg-[#7a7474]"
+            className="px-[14px] py-[6px] rounded-[6px]  text-[#2d004d] font-bold transition "
             whileHover={{ scale: 1.05, backgroundColor: '#d32f2f', color: 'white' }}
             whileTap={{ scale: 0.95 }}
           >
