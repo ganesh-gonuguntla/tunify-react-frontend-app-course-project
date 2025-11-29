@@ -5,7 +5,6 @@ import { fetchSongsByCategoryFromInternet } from '../utils/musicApi'
 import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
 import { motion } from 'framer-motion'
-import '../styles/navbar.css'   // <-- NEW CSS FILE
 
 export default function CategoryPage() {
   const { slug } = useParams()
@@ -55,40 +54,40 @@ export default function CategoryPage() {
 
   return (
     <motion.main
-      className="category-page"
+      className="max-w-full mx-auto py-[24px] px-[16px] bg-[linear-gradient(135deg,#b3fefd,#faa5c1)] min-h-[90vh] "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="category-header">
-        <h1 className="category-title">{slug}</h1>
+      <div className="flex justify-between items-center mb-[18px]">
+        <h1 className="text-[40px] font-extrabold font-[Raleway] capitalize mb-[10px] bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] bg-clip-text text-transparent ml-0">{slug}</h1>
 
-        <div className="category-buttons">
+        <div className="flex gap-[10px]">
           <button
             onClick={() => setUseInternet(v => !v)}
-            className="category-button"
+            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
           >
             {useInternet ? 'Using Internet' : 'Use Internet'}
           </button>
 
           <button
             onClick={playAll}
-            className="category-button"
+            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
           >
             ▶ Play All
           </button>
 
           <button
             onClick={playAllShuffled}
-            className="category-button"
+            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
           >
             🔀 Shuffle All
           </button>
         </div>
       </div>
 
-      <div className="category-songs">
+      <div className="flex flex-col gap-[13px] items-center">
         {songs.map((song, index) => (
           <SongCard key={song.id} song={song} contextQueue={songs} index={index} />
         ))}
