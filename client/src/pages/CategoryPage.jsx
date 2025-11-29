@@ -54,7 +54,7 @@ export default function CategoryPage() {
 
   return (
     <motion.main
-      className="max-w-full mx-auto py-[24px] px-[16px] bg-[linear-gradient(135deg,#b3fefd,#faa5c1)] min-h-[90vh] "
+      className="max-w-full mx-auto py-[24px] px-[16px] bg-[linear-gradient(100deg,#b3fefd,#faa5c1)] min-h-[90vh] "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
