@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import '../styles/navbar.css'
+
 
 export default function CategoryCard({ category }) {
   return (

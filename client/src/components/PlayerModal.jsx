@@ -1,5 +1,5 @@
 import { usePlayer } from '../state/PlayerContext'
-// import '../styles/modal.css'
+
 
 export default function PlayerModal() {
   const {
@@ -44,7 +44,7 @@ export default function PlayerModal() {
 
   return (
     <div className="fixed bottom-[20px] left-1/2 -translate-x-1/2 z-[1500] animate-[slideUp_0.3s_ease-out]">
-      <div className="bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] pl-[20px] pr-[24px] py-[10px] min-w-[500px] max-w-[600px]">
+      <div className="bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] pl-[20px] pr-[24px] py-[10px] min-w-[500px] w-[600px]">
         <div className="flex flex-col gap-[16px]">
           {/* Song Info with Rotating Cover */}
           <div className="flex items-center gap-[12px] flex-1">
