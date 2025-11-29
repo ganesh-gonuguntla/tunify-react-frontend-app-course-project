@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import { api } from '../utils/api'
-import '../styles/modal.css'
+
 
 export default function AddToPlaylistModal({ song, user, onClose, onAdded, playlists }) {
   const [selected, setSelected] = useState(new Set())

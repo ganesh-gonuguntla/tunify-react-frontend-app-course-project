@@ -1,0 +1,79 @@
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6a0dad, #2d004d);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+}
+
+.btn-secondary {
+  background: #ddd;
+  color: #333;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #6a0dad;
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.btn-success:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.btn-action {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding: 6px 10px;
+  min-width: 38px;
+}
+
+.btn-action:hover:not(:disabled) {
+  background: #e0e0e0;
+  border-color: #6a0dad;
+}
+
+.btn-action.liked {
+  color: #ef4444;
+}

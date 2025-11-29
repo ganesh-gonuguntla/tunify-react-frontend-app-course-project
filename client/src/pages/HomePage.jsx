@@ -3,7 +3,7 @@ import { api } from '../utils/api'
 import CategoryCard from '../components/CategoryCard'
 import LikedCard from '../components/LikedCard'
 import { motion } from 'framer-motion'
-import '../styles/navbar.css'
+import '../styles/Home.css'
 
 export default function HomePage() {
   const [categories, setCategories] = useState([])

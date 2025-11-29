@@ -490,7 +490,92 @@
         "1671542094"
       ],
       "playlists": [],
-      "history": []
+      "history": [
+        {
+          "songId": 1846166343,
+          "title": "Oorum Blood (From \"Dude\") [Instrumental Orchestral Cover]",
+          "artist": "SM Melodies & Sam's Musiq Official",
+          "ts": 1764425279611
+        },
+        {
+          "songId": 1836134453,
+          "title": "Oorum Blood (From \"Dude\")",
+          "artist": "Sai Abhyankkar, Paal Dabba, bebhumika & Deepthi Suresh",
+          "ts": 1764425249127
+        },
+        {
+          "songId": "1529565676",
+          "title": "Yeda Poinado",
+          "artist": "Nikhita Srivalli, Penchal Das & Kailash Kher",
+          "ts": 1764423871601
+        },
+        {
+          "songId": "1820451080",
+          "title": "Sarkaru Raa",
+          "artist": "Thaman S. & Kasarla Shyam",
+          "ts": 1764423840715
+        },
+        {
+          "songId": "1839944543",
+          "title": "Guns and Roses (From \"They Call Him OG\")",
+          "artist": "Thaman S. & Harsha Darivemula",
+          "ts": 1764423810628
+        },
+        {
+          "songId": "1705609011",
+          "title": "Hungry Cheetah (From \"They Call Him OG\")",
+          "artist": "Thaman S.",
+          "ts": 1764423780491
+        },
+        {
+          "songId": "1602054632",
+          "title": "Komuram Bheemudo (From \"RRR\")",
+          "artist": "Kaala Bhairava & M.M. Keeravani",
+          "ts": 1764423750355
+        },
+        {
+          "songId": "1594544794",
+          "title": "Naatu Naatu (From \"RRR\")",
+          "artist": "Rahul Sipligunj, Kaala Bhairava & M.M. Keeravani",
+          "ts": 1764423717918
+        },
+        {
+          "songId": "1847833743",
+          "title": "Baahubali - The Story",
+          "artist": "M.M. Keeravani",
+          "ts": 1764423687787
+        },
+        {
+          "songId": "1671542094",
+          "title": "Ori Vaari (From \"Dasara\")",
+          "artist": "Santhosh Narayanan & Shreemani",
+          "ts": 1764423656464
+        },
+        {
+          "songId": "1676212781",
+          "title": "Chamkeela Angeelesi (From \"Dasara\")",
+          "artist": "Ram Miriyala, Dhee, Santhosh Narayanan & Kasarla Shyam",
+          "ts": 1764423626437
+        },
+        {
+          "songId": "1851988371",
+          "title": "Globetrotter (From \"Globetrotter\")",
+          "artist": "M.M. Keeravani, Shruti Haasan, Kaala Bhairava & Chaitanya Prasad",
+          "ts": 1764423596346
+        },
+        {
+          "songId": "1278916141",
+          "title": "Raavana",
+          "artist": "Divya Kumar",
+          "ts": 1764423594514
+        },
+        {
+          "songId": "574044008",
+          "title": "Highway to Hell",
+          "artist": "AC/DC",
+          "ts": 1764423592138
+        }
+      ]
     },
     {
       "id": "80d6",
@@ -1282,7 +1367,8 @@
         1839944543,
         1820451080,
         1529565676,
-        574044008
+        574044008,
+        "1671542094"
       ]
     },
     {

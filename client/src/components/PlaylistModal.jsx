@@ -3,7 +3,7 @@ import { api } from '../utils/api'
 import { useAuth } from '../state/AuthContext'
 import { usePlayer } from '../state/PlayerContext'
 import AddToPlaylistModal from './AddToPlaylistModal'
-import '../styles/modal.css'
+import '../styles/buttons.css'
 
 export default function PlaylistModal({ playlist, songs, user, onClose, onPlaylistUpdated }) {
   const { updateUser } = useAuth()

@@ -64,8 +64,7 @@ export default function SongCard({ song, onAddedToPlaylist, onLiked, contextQueu
 
   return (
     <motion.div
-      className="flex items-center gap-[12px] w-full p-[12-x] py-[5px] shadow-[7px_7px_5px_#888888] rounded-[8px] cursor-pointer bg-gradient-to-br from-[#000001] via-[#2d004d] to-[#6a0dad]
- hover:bg-[#2d004d] hover:border hover:border-[snow]"
+      className="flex items-center gap-[12px] w-full p-[12-x] py-[5px] shadow-[7px_7px_5px_#888888] rounded-[8px] cursor-pointer bg-[linear-gradient(135deg,#000005,#923993)] hover:bg-[linear-gradient(to_right,#000,#000)] hover:border hover:border-[snow]"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
