@@ -61,26 +61,27 @@ export default function CategoryPage() {
       transition={{ duration: 0.5 }}
     >
       <div className="flex justify-between items-center mb-[18px]">
-        <h1 className="text-[40px] font-extrabold font-[Raleway] capitalize mb-[10px] bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] bg-clip-text text-transparent ml-0">{slug}</h1>
+        <h1 className="text-[50px] font-black font-[Raleway] capitalize mb-[10px] bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] bg-clip-text text-transparent ml-0">{slug}</h1>
 
         <div className="flex gap-[10px]">
+
           <button
             onClick={() => setUseInternet(v => !v)}
-            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
+            className="text-black bg-[linear-gradient(135deg,#ed6ea0,#ec8c69)] hover:bg-[linear-gradient(135deg,#acb6e5,#86fde8)] px-[14px] py-[6px] border border-white rounded-[6px] text-[14px] cursor-pointer transition duration-200"
           >
             {useInternet ? 'Using Internet' : 'Use Internet'}
           </button>
 
           <button
             onClick={playAll}
-            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
+            className="text-white bg-[linear-gradient(135deg,#ed6ea0,#ec8c69)] hover:bg-[linear-gradient(135deg,#ec8c69,#ed6ea0)] px-[14px] py-[6px] border border-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 "
           >
             ▶ Play All
           </button>
 
           <button
             onClick={playAllShuffled}
-            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
+            className="text-white bg-[linear-gradient(135deg,#ed6ea0,#ec8c69)] hover:bg-[linear-gradient(135deg,#ec8c69,#ed6ea0)] px-[14px] py-[6px] border border-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 "
           >
             🔀 Shuffle All
           </button>
@@ -95,3 +96,10 @@ export default function CategoryPage() {
     </motion.main>
   )
 }
+
+
+<button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-heading rounded-base group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+<span className=" relative px-4 py-2.5 transition-all ease-in duration-75 bg-neutral-primary-soft rounded-base group-hover:bg-transparent group-hover:dark:bg-transparent leading-5">
+Purple to pink
+</span>
+</button>

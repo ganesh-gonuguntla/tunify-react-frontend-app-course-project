@@ -7,64 +7,33 @@ import PlaylistCard from '../components/PlaylistCard'
 import PlaylistModal from '../components/PlaylistModal'
 import { usePlayer } from '../state/PlayerContext'
 import { motion } from 'framer-motion'
-import '../styles/profilePage.css'   // <-- Profile page styles
+import '../styles/profilePage.css'   
 
 export default function ProfilePage() {
 
-  /* -----------------------------------------
-   *  GLOBAL STATE & USER CONTEXT
-   * -----------------------------------------
-   * user       → Currently logged-in user object
-   * playlists  → List of user playlists
-   * songs      → All songs in db.json
-   * history    → Songs listened by user (from user.history)
-   */
   const { user, updateUser } = useAuth()
   const [playlists, setPlaylists] = useState([])
   const [songs, setSongs] = useState([])
   const [history, setHistory] = useState([])
   const [selectedPlaylist, setSelectedPlaylist] = useState(null)
-
-  // Music player context (used to play playlists)
   const { playSongs, setShuffle, shuffle } = usePlayer()
 
-  /* -----------------------------------------
-   *  LOAD USER PLAYLISTS + ALL SONGS
-   * -----------------------------------------
-   * Runs every time the user changes (e.g., login)
-   * Pulls playlists for the specific userId
-   * Loads all available songs into state
-   * Loads history stored in the user's record
-   */
   useEffect(() => {
     if (!user) return
 
     api.get(`/playlists?userId=${user.id}`).then((res) => setPlaylists(res.data))
     api.get('/songs').then((res) => setSongs(res.data))
 
-    // Load listening history stored in the user object
     setHistory(user.history || [])
   }, [user])
-
-  /* -----------------------------------------
-   *  LIKED SONGS (computed from user.likedSongIds)
-   * ----------------------------------------- */
   const likedSongs = useMemo(() => {
     return songs.filter((s) => (user?.likedSongIds || []).map(String).includes(String(s.id)))
   }, [songs, user])
-
-  /* -----------------------------------------
-   *  REFRESH PLAYLIST DATA FROM SERVER
-   * ----------------------------------------- */
   const refreshPlaylists = async () => {
     if (!user) return
     const res = await api.get(`/playlists?userId=${user.id}`)
     setPlaylists(res.data)
   }
-
-  /* -----------------------------------------
-   *  CREATE NEW PLAYLIST
-   * ----------------------------------------- */
   const createPlaylist = async () => {
     if (!user) return
 
@@ -79,10 +48,6 @@ export default function ProfilePage() {
 
     refreshPlaylists()
   }
-
-  /* -----------------------------------------
-   *  RENAME EXISTING PLAYLIST
-   * ----------------------------------------- */
   const renamePlaylist = async (pl) => {
     const name = window.prompt('Rename playlist', pl.name)
     if (!name) return
@@ -90,19 +55,11 @@ export default function ProfilePage() {
     await api.patch(`/playlists/${pl.id}`, { ...pl, name })
     refreshPlaylists()
   }
-
-  /* -----------------------------------------
-   *  DELETE PLAYLIST
-   * ----------------------------------------- */
   const deletePlaylist = async (pl) => {
     if (!window.confirm('Delete this playlist?')) return
     await api.delete(`/playlists/${pl.id}`)
     refreshPlaylists()
   }
-
-  /* -----------------------------------------
-   *  REMOVE SONG FROM PLAYLIST
-   * ----------------------------------------- */
   const removeSongFromPlaylist = async (pl, songId) => {
     const updated = {
       ...pl,
@@ -111,15 +68,9 @@ export default function ProfilePage() {
     await api.patch(`/playlists/${pl.id}`, updated)
     refreshPlaylists()
   }
-
-  /* -----------------------------------------
-   *  MAIN PAGE UI
-   * ----------------------------------------- */
   const playHistorySong = (index) => {
-    // Map history items to full song objects
     const historySongs = history.map(h => songs.find(s => String(s.id) === String(h.songId))).filter(Boolean)
 
-    // Find the clicked song in the mapped list
     const clickedHistoryItem = history[index]
     const songIndex = historySongs.findIndex(s => String(s.id) === String(clickedHistoryItem.songId))
 
@@ -139,18 +90,14 @@ export default function ProfilePage() {
     >
       <h2 className="profile-title" style={{ marginBottom: '20px' }}>Hey, {user?.username} welcome to your section</h2>
 
-      {/* ======== LIKED SONGS SECTION ======== */}
       <section className="profile-section">
         <div className="profile-section-header">
           <h2 className="profile-title">Liked Songs</h2>
           <Link to="/liked" className="primary-btn profile-button">View liked songs</Link>
         </div>
       </section>
-
-      {/* ======== PLAYLIST SECTION ======== */}
       <section className="profile-section">
 
-        {/* Header row: Playlist title + "New Playlist" button */}
         <div className="profile-section-header">
           <h2 className="profile-title">Playlists</h2>
 
@@ -174,7 +121,6 @@ export default function ProfilePage() {
         )}
       </section>
 
-      {/* ======== LISTENING HISTORY ======== */}
       <section className="profile-section">
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <h2 className="profile-title mb-4">Listening History</h2>
@@ -213,9 +159,8 @@ export default function ProfilePage() {
                 <button
                   className="cross"
                   onClick={async (e) => {
-                    e.stopPropagation() // Prevent playing when deleting
+                    e.stopPropagation() 
                     if (!user) return
-                    // Build next history by removing matching item (by id if present, otherwise by title+artist)
                     const nextHistory = (user.history || []).filter((it) => {
                       if (it.id && h.id) return String(it.id) !== String(h.id)
                       return !(it.title === h.title && it.artist === h.artist)
@@ -241,11 +186,9 @@ export default function ProfilePage() {
           onClose={() => setSelectedPlaylist(null)}
           onPlaylistUpdated={(updated) => {
             if (updated === null) {
-              // Playlist was deleted
               refreshPlaylists()
               setSelectedPlaylist(null)
             } else {
-              // Playlist was updated
               setPlaylists(playlists.map((p) => (p.id === updated.id ? updated : p)))
             }
           }}

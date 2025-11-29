@@ -43,8 +43,8 @@ export default function PlayerModal() {
   }
 
   return (
-    <div className="fixed bottom-[20px] left-1/2 -translate-x-1/2 z-[1500] animate-[slideUp_0.3s_ease-out]">
-      <div className="bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] pl-[20px] pr-[24px] py-[10px] min-w-[500px] w-[600px]">
+    <div className="fixed bottom-[45px] left-1/2 -translate-x-1/2 z-[1500] animate-[slideUp_0.3s_ease-out]">
+      <div className="bg-[linear-gradient(135deg,#000000,#2d004d,#6a0dad)] rounded-[16px] shadow-[0_10px_40px_rgba(0,0,0,0.5)] pl-[20px] pr-[24px] py-[10px] w-[650px] max-w-[650px]">
         <div className="flex flex-col gap-[16px]">
           {/* Song Info with Rotating Cover */}
           <div className="flex items-center gap-[12px] flex-1">
@@ -69,7 +69,7 @@ export default function PlayerModal() {
               <span>{formatTime(currentTime)}</span>
               <span>{formatTime(duration)}</span>
             </div>
-            <div className="relative w-full h-[6px] bg-white/20 rounded-[3px] cursor-pointer transition-all duration-200 hover:h-[8px]" onClick={handleProgressClick}>
+            <div className="relative w-full h-[6px] bg-black rounded-[3px] cursor-pointer transition-all duration-200 hover:h-[8px]" onClick={handleProgressClick}>
               <div
                 className="absolute top-0 left-0 h-full bg-white rounded-[3px] transition-all duration-100"
                 style={{ width: `${progressPercent}%` }}

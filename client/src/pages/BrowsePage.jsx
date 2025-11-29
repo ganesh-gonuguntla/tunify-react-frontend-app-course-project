@@ -5,6 +5,7 @@ import SongCard from '../components/SongCard'
 import { usePlayer } from '../state/PlayerContext'
 import { motion } from 'framer-motion'
 
+
 export default function BrowsePage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [songs, setSongs] = useState([])
@@ -80,8 +81,7 @@ export default function BrowsePage() {
         <div className="flex gap-[10px]">
           <button
             onClick={() => setUseInternet((v) => !v)}
-            className="px-[14px] py-[6px] border border-[#ccc] bg-white rounded-[6px] text-[14px] cursor-pointer transition duration-200 hover:bg-[#f2f2f2]"
-          >
+        className="text-black bg-[linear-gradient(135deg,#ed6ea0,#ec8c69)] hover:bg-[linear-gradient(135deg,#acb6e5,#86fde8)] px-[14px] py-[6px] border border-white rounded-[6px] text-[14px] cursor-pointer transition duration-200"          >
             {useInternet ? 'Using Internet' : 'Use Internet'}
           </button>
 
