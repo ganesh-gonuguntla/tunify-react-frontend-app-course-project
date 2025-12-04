@@ -20,9 +20,8 @@ export default function LikedSongsPage() {
     load()
   }, [user])
 
-  const likedSongs = songs.filter((s) =>
-    (user?.likedSongIds || []).includes(s.id)
-  )
+  const likedSongIds = new Set((user?.likedSongIds || []).map(String))
+  const likedSongs = songs.filter((s) => likedSongIds.has(String(s.id)))
 
   if (!user) return null
 
@@ -38,7 +37,7 @@ export default function LikedSongsPage() {
         <h1 className="mt-[12px] text-[40px] text-[40px] font-[Raleway,sans-serif] mb-[10px] ml-0">Liked Songs</h1>
         <div className="text-[20px] font-bold">
           {likedSongs.length} song{likedSongs.length !== 1 ? 's' : ''}
-        </div> 
+        </div>
       </div>
 
       {likedSongs.length === 0 ? (

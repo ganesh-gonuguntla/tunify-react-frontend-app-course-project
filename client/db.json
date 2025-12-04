@@ -70,40 +70,38 @@
       "id": "e1c4",
       "username": "AP23110011393",
       "likedSongIds": [
-        1440783625,
-        1440848810,
         828259377,
         300205055,
-        1593911544,
-        158796608,
-        158796836,
-        "1593911544",
-        "158796836",
-        1065947056,
-        1445732928,
-        1443430411,
-        1323177389,
-        1443431128,
-        1641389262,
-        1739659144,
-        1590036021,
-        268532564,
-        1487502476,
-        "1323177389",
-        "1443430411",
-        1851699262,
-        "1747191476",
-        1853854250,
-        1711337908,
-        1772783961,
-        1176303886,
-        1469575848,
-        1853042906,
-        1449206820,
-        "1594176032"
+        "1772783961",
+        "1851699262",
+        "1440848810"
       ],
       "playlists": [],
       "history": [
+        {
+          "songId": 1851387672,
+          "title": "Chikiri Chikiri (From \"Peddi\") [HINDI]",
+          "artist": "A.R. Rahman, Mohit Chauhan & Raqueeb Alam",
+          "ts": 1764828993287
+        },
+        {
+          "songId": 1851388336,
+          "title": "Chikiri Chikiri (From \"Peddi\") [TELUGU]",
+          "artist": "A.R. Rahman, Mohit Chauhan & Balaji",
+          "ts": 1764828981873
+        },
+        {
+          "songId": 1724926124,
+          "title": "All Hail the Tiger (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander, Natalie Di Luccio & Heisenberg",
+          "ts": 1764828967283
+        },
+        {
+          "songId": 1768062609,
+          "title": "Red Sea (From \"Devara Part 1\")",
+          "artist": "Anirudh Ravichander & Heisenberg",
+          "ts": 1764828948024
+        },
         {
           "songId": 1666840083,
           "title": "Bam Akhanda",
@@ -1355,6 +1353,62 @@
       "category": "devara",
       "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/9e/7d/579e7d00-9258-be6f-8618-3ae934e64202/mzaf_9034032259604679066.plus.aac.p.m4a",
       "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e7/9d/51/e79d5182-5ad6-ed51-ac78-719b65f4b852/8903431001351_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1441539154,
+      "title": "Someone You Loved",
+      "artist": "Lewis Capaldi",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/70/b7/6d/70b76dea-864b-7142-2304-74a980071694/mzaf_7460240788114060882.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/f7/af/05f7af37-526e-5e6e-e4cd-9e4bc3da0756/18UMGIM52528.rgb.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1200868875,
+      "title": "Location",
+      "artist": "Khalid",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/fb/79/37fb7956-05b7-f7bb-1996-6780d939dbf5/mzaf_7253782475362178831.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/45/5a/f8455a71-8307-aa9a-9c95-3d22efe0804f/886446326146.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 635770202,
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "category": "pop",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/1b/f0/a71bf07d-f498-05c9-2c8a-d12af7d019d8/mzaf_11402952498213508559.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/16/2c/88162c3d-46db-8321-61f3-3a47404cfe76/075596050920.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1766487491,
+      "title": "Daavudi (From \"Devara Part 1\") - TELUGU",
+      "artist": "Nakash Aziz, Akasa & Ramajogayya Sastry",
+      "category": "DEVARA",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/f9/49/cef94985-9a9d-0902-b535-f05e4044262c/mzaf_9840598461303291959.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f0/96/13/f0961340-e9cb-4a9a-6a76-629bfd3869a8/8903431015167_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1851388336,
+      "title": "Chikiri Chikiri (From \"Peddi\") [TELUGU]",
+      "artist": "A.R. Rahman, Mohit Chauhan & Balaji",
+      "category": "CHIKIRI",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/5e/f7/7e5ef74e-b761-0ec0-5e7a-6f28840e73c2/mzaf_2621651335287188973.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/b8/61/8eb86197-d301-56f8-5f64-554863036a35/8903431148735_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1851387672,
+      "title": "Chikiri Chikiri (From \"Peddi\") [HINDI]",
+      "artist": "A.R. Rahman, Mohit Chauhan & Raqueeb Alam",
+      "category": "CHIKIRI",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/66/04/c96604fd-21b7-cb3c-a7b4-2232c986b392/mzaf_9109087853638144673.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/a3/c0/8ca3c027-2806-6368-1afe-8f05a045e54c/8903431148742_cover.jpg/100x100bb.jpg"
+    },
+    {
+      "id": 1851697567,
+      "title": "Chikiri Chikiri (From \"Peddi\") - TAMIL",
+      "artist": "A.R. Rahman, A.R. Ameen & Vivek",
+      "category": "CHIKIRI",
+      "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/60/77/9a6077c6-cdcd-937e-0b74-e030e1b0776f/mzaf_7536750709325605220.plus.aac.p.m4a",
+      "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ec/8c/2a/ec8c2a59-e0da-93ec-2623-57578d8beb6a/8903431148759_cover.jpg/100x100bb.jpg"
     }
   ],
   "playlists": [
