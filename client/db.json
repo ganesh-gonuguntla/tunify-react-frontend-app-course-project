@@ -676,6 +676,30 @@
       ],
       "playlists": [],
       "history": []
+    },
+    {
+      "id": "db3d",
+      "username": "THE_SKETCHIST",
+      "likedSongIds": [
+        1624932774,
+        1441539154,
+        1761152593
+      ],
+      "playlists": [],
+      "history": [
+        {
+          "songId": 1857634238,
+          "title": "Jajikaya Jajikaya",
+          "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
+          "ts": 1764832057771
+        },
+        {
+          "songId": 1853854250,
+          "title": "Jajikaya Jajikaya (From \"Akhanda 2 - Thaandavam\")",
+          "artist": "Thaman S., Brijesh Shandilya, Shreya Ghoshal & Kasarla Shyam",
+          "ts": 1764832025154
+        }
+      ]
     }
   ],
   "categories": [
@@ -1508,6 +1532,15 @@
         1768062609,
         1779232449
       ]
+    },
+    {
+      "id": "0301",
+      "userId": "db3d",
+      "name": "Devara",
+      "songIds": [
+        1761152593,
+        1766487491
+      ]
     }
   ],
   "authUsers": [
@@ -1569,6 +1602,11 @@
     {
       "id": "11e4",
       "username": "ganesh_gonuguntla",
+      "password": "Ganesh@#2006"
+    },
+    {
+      "id": "20ec",
+      "username": "THE_SKETCHIST",
       "password": "Ganesh@#2006"
     }
   ]
