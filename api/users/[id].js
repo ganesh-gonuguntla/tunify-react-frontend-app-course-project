@@ -26,7 +26,10 @@ export default async function handler(req, res) {
     }
 
     if (req.method === 'PUT' || req.method === 'PATCH') {
-      const update = req.body
+      const update = { ...req.body }
+      delete update._id
+      delete update.id
+
       const result = await usersCollection.updateOne(query, { $set: update })
       if (result.matchedCount === 0) return res.status(404).json({ error: 'User not found' })
       const updated = await usersCollection.findOne(query)
