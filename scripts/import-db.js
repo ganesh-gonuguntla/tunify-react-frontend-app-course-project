@@ -38,6 +38,9 @@ async function importDB() {
     // Clear existing collections
     await db.collection('users').deleteMany({})
     await db.collection('authUsers').deleteMany({})
+    await db.collection('categories').deleteMany({})
+    await db.collection('songs').deleteMany({})
+    await db.collection('playlists').deleteMany({})
 
     // Import users
     if (data.users && data.users.length > 0) {
@@ -54,6 +57,21 @@ async function importDB() {
     if (data.authUsers && data.authUsers.length > 0) {
       const authUsersResult = await db.collection('authUsers').insertMany(data.authUsers)
       console.log(`✓ Imported ${authUsersResult.insertedCount} auth users`)
+    }
+
+    if (data.categories && data.categories.length > 0) {
+      const result = await db.collection('categories').insertMany(data.categories)
+      console.log(`✓ Imported ${result.insertedCount} categories`)
+    }
+
+    if (data.songs && data.songs.length > 0) {
+      const result = await db.collection('songs').insertMany(data.songs)
+      console.log(`✓ Imported ${result.insertedCount} songs`)
+    }
+
+    if (data.playlists && data.playlists.length > 0) {
+      const result = await db.collection('playlists').insertMany(data.playlists)
+      console.log(`✓ Imported ${result.insertedCount} playlists`)
     }
 
     console.log('✓ Import complete')

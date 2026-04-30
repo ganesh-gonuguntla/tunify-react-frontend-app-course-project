@@ -7,35 +7,35 @@ export default async function handler(req, res) {
   if (handleOptions(req, res)) return
 
   const { id } = req.query
-
   if (!id) {
     return res.status(400).json({ error: 'Invalid ID' })
   }
 
   try {
     const db = await connectDB()
-    const usersCollection = db.collection('users')
+    const playlistsCollection = db.collection('playlists')
     
-    // Support both MongoDB ObjectIds and string IDs
+    // For json-server compatibility, IDs might be strings instead of ObjectIds
+    // We will query by both if it is a valid ObjectId, otherwise just by string id.
     const query = ObjectId.isValid(id) ? { $or: [{ _id: new ObjectId(id) }, { id: id }] } : { id: id }
 
     if (req.method === 'GET') {
-      const user = await usersCollection.findOne(query)
-      if (!user) return res.status(404).json({ error: 'User not found' })
-      return res.status(200).json({ ...user, id: user._id.toString() })
+      const playlist = await playlistsCollection.findOne(query)
+      if (!playlist) return res.status(404).json({ error: 'Playlist not found' })
+      return res.status(200).json({ ...playlist, id: playlist.id || playlist._id.toString() })
     }
 
-    if (req.method === 'PUT' || req.method === 'PATCH') {
+    if (req.method === 'PATCH' || req.method === 'PUT') {
       const update = req.body
-      const result = await usersCollection.updateOne(query, { $set: update })
-      if (result.matchedCount === 0) return res.status(404).json({ error: 'User not found' })
-      const updated = await usersCollection.findOne(query)
+      const result = await playlistsCollection.updateOne(query, { $set: update })
+      if (result.matchedCount === 0) return res.status(404).json({ error: 'Playlist not found' })
+      const updated = await playlistsCollection.findOne(query)
       return res.status(200).json({ ...updated, id: updated.id || updated._id.toString() })
     }
 
     if (req.method === 'DELETE') {
-      const result = await usersCollection.deleteOne(query)
-      if (result.deletedCount === 0) return res.status(404).json({ error: 'User not found' })
+      const result = await playlistsCollection.deleteOne(query)
+      if (result.deletedCount === 0) return res.status(404).json({ error: 'Playlist not found' })
       return res.status(204).end()
     }
 
