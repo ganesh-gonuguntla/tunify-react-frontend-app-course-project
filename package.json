@@ -1,0 +1,18 @@
+{
+  "name": "tunify",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cd client && vite",
+    "client:build": "cd client && vite build",
+    "client:preview": "cd client && vite preview",
+    "import-db": "node scripts/import-db.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "mongodb": "^6.21.0"
+  }
+}
